@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>bakito helm Chart Releases</title>
+</head>
+<body>
+<h1>{{ .Title }}</h1>
+{{- range $key, $value := .Entries }}
+<h2>{{ printf "%s" $key }}</h2>
+{{- range $value}}
+<div id="{{printf "%s-%s" $key .Version}}">
+    <h3>Version{{printf "%s" .Version}}</h3>
+    <p>{{printf "Generated %s" .Created}}</p>
+    <p>App Version <b>{{printf "%s" .AppVersion}}</b></p>
+{{- range .Urls}}
+    <a href="{{printf "%s" .}}">{{printf "%s" .}}</a>
+{{- end}}
+</div>
+{{- end}}
+{{- end}}
+</body></html>
