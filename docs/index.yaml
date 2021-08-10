@@ -1,0 +1,45 @@
+apiVersion: v1
+entries:
+  batch-job-controller:
+  - apiVersion: v2
+    appVersion: v1.1.1
+    created: "2021-08-25T20:30:58.869775403+02:00"
+    description: Install batch job controller
+    digest: 3e8b1720e8dc20ef7de844ecbaed944d3233638e7c9aaad29ae2338cf9deec6a
+    icon: https://emojigraph.org/media/google/man-construction-worker_1f477-200d-2642-fe0f.png
+    maintainers:
+    - email: github@bakito.ch
+      name: bakito
+    name: batch-job-controller
+    sources:
+    - https://github.com/bakito/batch-job-controller
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/batch-job-controller-v1.1.1/batch-job-controller-v1.1.1.tgz
+    version: v1.1.1
+  k8s-event-logger-operator:
+  - apiVersion: v2
+    appVersion: 1.8.1
+    created: "2021-08-25T19:01:09.43622615+02:00"
+    description: Kubernetes event logger operator
+    digest: 5f4a82910179fa5ee96ce6596785b423c81a299a46cfbb798cb56846347c4347
+    name: k8s-event-logger-operator
+    type: application
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/k8s-event-logger-operator-1.8.1/k8s-event-logger-operator-1.8.1.tgz
+    version: 1.8.1
+  sealed-secrets-web:
+  - apiVersion: v2
+    appVersion: 2.5.0
+    created: "2021-08-26T21:06:38.413497229+02:00"
+    description: A web interface for Sealed Secrets by Bitnami.
+    digest: 70fc7df4e6ebdc4b7dd648812fa114e0154ae96c8ba98896b1590da680639d32
+    home: https://github.com/bakito/sealed-secrets-web
+    icon: https://raw.githubusercontent.com/bakito/sealed-secrets-web/master/assets/logo.png
+    maintainers:
+    - name: bakito
+      url: https://github.com/bakito
+    name: sealed-secrets-web
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-2.5.0/sealed-secrets-web-2.5.0.tgz
+    version: 2.5.0
+generated: "2021-08-26T21:06:38.413511519+02:00"
