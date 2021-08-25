@@ -6,9 +6,11 @@ import (
 	_ "embed"
 	"flag"
 	"fmt"
+	"io/ioutil"
 	"os"
+	"sort"
 
-	"github.com/spf13/viper"
+	"gopkg.in/yaml.v3"
 	htmltemplate "html/template"
 	texttemplate "text/template"
 )
@@ -44,7 +46,7 @@ type IndexYaml struct {
  * a Markdown format - usually we pipe this to README.md when in the gh-pages branch
  */
 func main() {
-	file := flag.String("file", "docs/index", "name of YAML file to parse (without extension or path)")
+	file := flag.String("file", "docs/index.yaml", "name of YAML file to parse")
 	title := flag.String("title", "bakito Helm Chart Releases", "title for the output")
 	htmlout := flag.Bool("html", false, "output HTML instead of Markdown")
 	flag.Parse()
@@ -73,19 +75,23 @@ func main() {
 
 func getIndexYaml(location string, title string) (IndexYaml, error) {
 	indexYaml := &IndexYaml{}
-	viper.SetConfigName(location)
-	viper.AddConfigPath(".")
-	viper.SetConfigType("yaml")
-
-	if err := viper.ReadInConfig(); err != nil {
+	b, err := ioutil.ReadFile(location)
+	if err != nil {
 		return IndexYaml{}, err
 	}
 
-	if err := viper.Unmarshal(indexYaml); err != nil {
+	if err := yaml.Unmarshal(b, indexYaml); err != nil {
 		return IndexYaml{}, err
 	}
 
 	indexYaml.Title = title
+
+	for key := range indexYaml.Entries {
+
+		sort.Slice(indexYaml.Entries[key], func(i, j int) bool {
+			return indexYaml.Entries[key][i].Version < indexYaml.Entries[key][j].Version
+		})
+	}
 
 	return *indexYaml, nil
 }

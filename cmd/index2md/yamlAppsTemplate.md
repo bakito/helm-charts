@@ -1,16 +1,22 @@
 {{ printf "# %s" .Title }}
-
-{{- range $key, $value := .Entries }}
+{{ range $key, $value := .Entries }}
 {{ printf "## %s" $key }}
+{{- range $i, $v :=  $value}}
+{{ if gt $i 0 }}
+<details>
+  <summary>Older versions</summary>
+{{ end }}
+{{printf "#### Version **%s**\n" $v.Version}}
+{{printf "> Generated %s" $v.Created}}
 
-{{- range $value}}
-{{printf "#### Version **%s**" .Version}}
-{{printf "> Generated %s" .Created}}
+{{printf "App Version **%s**" $v.AppVersion}}
 
-{{printf "App Version **%s**" .AppVersion}}
-
-{{- range .Urls}}
+{{- range $v.Urls}}
 {{printf "[%s](%s)" . .}}
 {{- end}}
-{{- end}}
+
+{{- if gt $i 0 }}
+</details>
+{{- end }}
+{{ end}}
 {{- end}}
