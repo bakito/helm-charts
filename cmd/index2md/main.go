@@ -9,10 +9,9 @@ import (
 	"io/ioutil"
 	"os"
 	"sort"
+	"text/template"
 
 	"gopkg.in/yaml.v3"
-	htmltemplate "html/template"
-	texttemplate "text/template"
 )
 
 var (
@@ -47,7 +46,7 @@ type IndexYaml struct {
  */
 func main() {
 	file := flag.String("file", "docs/index.yaml", "name of YAML file to parse")
-	title := flag.String("title", "bakito Helm Chart Releases", "title for the output")
+	title := flag.String("title", `bakito <img src="https://helm.sh/img/helm.svg" alt="Helm" style="width:32px;"/> Chart Releases`, "title for the output")
 	htmlout := flag.Bool("html", false, "output HTML instead of Markdown")
 	flag.Parse()
 	indexYaml, err := getIndexYaml(*file, *title)
@@ -59,13 +58,13 @@ func main() {
 		os.Exit(1)
 	}
 
+	var tmplAppsList *template.Template
 	if !*htmlout {
-		tmplAppsList, _ := htmltemplate.New("yamlAppsTemplateMarkdown").Parse(yamlAppsTemplateMarkdown)
-		err = tmplAppsList.Execute(os.Stdout, indexYaml)
+		tmplAppsList, _ = template.New("yamlAppsTemplateMarkdown").Parse(yamlAppsTemplateMarkdown)
 	} else {
-		tmplAppsList, _ := texttemplate.New("yamlAppsTemplateHtml").Parse(yamlAppsTemplateHTML)
-		err = tmplAppsList.Execute(os.Stdout, indexYaml)
+		tmplAppsList, _ = template.New("yamlAppsTemplateHtml").Parse(yamlAppsTemplateHTML)
 	}
+	err = tmplAppsList.Execute(os.Stdout, indexYaml)
 
 	if err != nil {
 		_, _ = fmt.Fprintf(os.Stderr, "Unable to execute %v\n", err)
