@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  k8s-event-logger-operator:
+  - apiVersion: v2
+    appVersion: 1.8.1
+    created: "2021-08-25T19:01:09.43622615+02:00"
+    description: Kubernetes event logger operator
+    digest: 5f4a82910179fa5ee96ce6596785b423c81a299a46cfbb798cb56846347c4347
+    name: k8s-event-logger-operator
+    type: application
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/k8s-event-logger-operator-1.8.1/k8s-event-logger-operator-1.8.1.tgz
+    version: 1.8.1
+generated: "2021-08-25T19:01:09.436232678+02:00"
