@@ -3,50 +3,23 @@
 package main
 
 import (
+	_ "embed"
 	"flag"
 	"fmt"
+	"os"
+
 	"github.com/spf13/viper"
 	htmltemplate "html/template"
-	"os"
 	texttemplate "text/template"
 )
 
-const yamlAppsTemplateMarkdown = "{{ printf \"# bakito Helm Chart Releases\"}}\n\n" +
-	"{{range $key, $value := .Entries }}" +
-	"{{ printf \"## %s\" $key }}\n\n" +
-	"{{range $value}}" +
-	"{{printf \"#### Version **%s**\" .Version}}\n" +
-	"{{printf \"> Generated %s\" .Created}}\n\n" +
-	"{{printf \"App Version **%s**\" .AppVersion}}\n\n" +
-	"{{range .Urls}}" +
-	"{{printf \"[%s](%s)\" . .}}\n" +
-	"{{end}}\n\n" +
-	"{{end}}\n" +
-	"{{end}}\n"
+var (
+	//go:embed yamlAppsTemplate.md
+	yamlAppsTemplateMarkdown string
 
-const yamlAppsTemplateHTML = "" +
-	"<!DOCTYPE html \n" +
-	"PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \n" +
-	"\"DTD/xhtml1-strict.dtd\">\n" +
-	"<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n" +
-	"\t<head>\n" +
-	"\t\t<title>bakito helm Chart Releases</title>\n" +
-	"\t</head>\n" +
-	"\t<body>\n" +
-	"\t\t<h1>{{ printf \"bakito Helm Chart Releases\"}}</h1>\n" +
-	"{{range $key, $value := .Entries }}" +
-	"\t\t<h2>{{ printf \"%s\" $key }}</h2>\n" +
-	"{{range $value}}" +
-	"\t\t<div id=\"{{printf \"%s-%s\" $key .Version}}\">\n" +
-	"\t\t\t<h3>Version{{printf \"%s\" .Version}}</h3>\n" +
-	"\t\t\t<p>{{printf \"Generated %s\" .Created}}</p>\n" +
-	"\t\t\t<p>App Version <b>{{printf \"%s\" .AppVersion}}</b></p>\n" +
-	"{{range .Urls}}" +
-	"\t\t\t<a href=\"{{printf \"%s\" .}}\">{{printf \"%s\" .}}</a>\n" +
-	"{{end}}\n" +
-	"\t\t</div>\n" +
-	"{{end}}\n" +
-	"{{end}}</body></html>"
+	//go:embed yamlAppsTemplate.html
+	yamlAppsTemplateHTML string
+)
 
 // Chart :
 type Chart struct {
@@ -60,6 +33,7 @@ type Chart struct {
 
 // IndexYaml :
 type IndexYaml struct {
+	Title      string             `yaml:"-"`
 	APIVersion string             `yaml:"apiVersion"`
 	Entries    map[string][]Chart `yaml:"entries"`
 	Generated  string             `yaml:"generated"`
@@ -71,11 +45,15 @@ type IndexYaml struct {
  */
 func main() {
 	file := flag.String("file", "docs/index", "name of YAML file to parse (without extension or path)")
+	title := flag.String("title", "bakito Helm Chart Releases", "title for the output")
 	htmlout := flag.Bool("html", false, "output HTML instead of Markdown")
 	flag.Parse()
-	indexYaml, err := getIndexYaml(*file)
+	indexYaml, err := getIndexYaml(*file, *title)
 	if err != nil {
-		fmt.Fprintf(os.Stderr, "Unable to load %s.yaml %s\n", *file, err)
+		_, _ = fmt.Fprintf(os.Stderr, "Unable to load %s.yaml %s\n", *file, err)
+		if err != nil {
+			return
+		}
 		os.Exit(1)
 	}
 
@@ -88,12 +66,12 @@ func main() {
 	}
 
 	if err != nil {
-		fmt.Fprintf(os.Stderr, "Unable to execute %v\n", err)
+		_, _ = fmt.Fprintf(os.Stderr, "Unable to execute %v\n", err)
 		os.Exit(1)
 	}
 }
 
-func getIndexYaml(location string) (IndexYaml, error) {
+func getIndexYaml(location string, title string) (IndexYaml, error) {
 	indexYaml := &IndexYaml{}
 	viper.SetConfigName(location)
 	viper.AddConfigPath(".")
@@ -106,6 +84,8 @@ func getIndexYaml(location string) (IndexYaml, error) {
 	if err := viper.Unmarshal(indexYaml); err != nil {
 		return IndexYaml{}, err
 	}
+
+	indexYaml.Title = title
 
 	return *indexYaml, nil
 }
