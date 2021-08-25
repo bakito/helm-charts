@@ -1,4 +1,4 @@
-#bakito Helm Chart Releases
+# bakito Helm Chart Releases
 
 ## batch-job-controller
 

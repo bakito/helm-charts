@@ -11,7 +11,7 @@ import (
 	texttemplate "text/template"
 )
 
-const yamlAppsTemplateMarkdown = "{{ printf \"#bakito Helm Chart Releases\"}}\n\n" +
+const yamlAppsTemplateMarkdown = "{{ printf \"# bakito Helm Chart Releases\"}}\n\n" +
 	"{{range $key, $value := .Entries }}" +
 	"{{ printf \"## %s\" $key }}\n\n" +
 	"{{range $value}}" +
