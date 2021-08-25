@@ -1,4 +1,4 @@
-# helm-charts
+# [helm-charts](https://bakito.github.io/helm-charts/)
 
 ## Setup
 
