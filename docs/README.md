@@ -17,3 +17,12 @@ App Version **v1.1.1**
 
 App Version **1.8.1**
 [https://github.com/bakito/helm-charts/releases/download/k8s-event-logger-operator-1.8.1/k8s-event-logger-operator-1.8.1.tgz](https://github.com/bakito/helm-charts/releases/download/k8s-event-logger-operator-1.8.1/k8s-event-logger-operator-1.8.1.tgz)
+
+## sealed-secrets-web
+
+#### Version **v2.5.0-rc1**
+
+> Generated 2021-08-26T08:19:28.185273671+02:00
+
+App Version **v2.5.0-rc1**
+[https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-v2.5.0-rc1/sealed-secrets-web-v2.5.0-rc1.tgz](https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-v2.5.0-rc1/sealed-secrets-web-v2.5.0-rc1.tgz)
