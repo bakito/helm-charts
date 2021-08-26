@@ -3,12 +3,17 @@
 ## Setup
 
 Install [chart-releaser](https://github.com/helm/chart-releaser)
+env:
+```ỳaml
+export CR_TOKEN=${GITHUB_TOKEN}
+export CR_PACKAGE_PATH=/home/xxx/path/to/this/repo/packages
+```
+
 ~/.cr/cr.yaml
 
 ```ỳaml
 owner: bakito
 git-repo: helm-charts
-package-path: /home/xxx/path/to/this/repo/packages
 token: ghp_...
 git-base-url: https://api.github.com/
 git-upload-url: https://uploads.github.com/
@@ -16,7 +21,6 @@ charts-repo: https://bakito.github.io/helm-charts/
 index-path: /home/xxx/path/to/this/repo/docs/index.yaml
 pages-branch: main
 bakito @ ~/git/github
-
 ```
 
 ## Usage
