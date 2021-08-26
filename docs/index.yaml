@@ -27,4 +27,4 @@ entries:
     urls:
     - https://github.com/bakito/helm-charts/releases/download/k8s-event-logger-operator-1.8.1/k8s-event-logger-operator-1.8.1.tgz
     version: 1.8.1
-generated: "2021-08-26T20:03:45.398464295+02:00"
+generated: "2021-08-26T20:09:03.054869511+02:00"
