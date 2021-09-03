@@ -7,15 +7,21 @@
 <h1>{{ .Title }}</h1>
 {{- range $key, $value := .Entries }}
 <h2>{{ printf "%s" $key }}</h2>
-{{- range $value}}
-<div id="{{printf "%s-%s" $key .Version}}">
-    <h3>Version{{printf "%s" .Version}}</h3>
-    <p>{{printf "Generated %s" .Created}}</p>
-    <p>App Version <b>{{printf "%s" .AppVersion}}</b></p>
-{{- range .Urls}}
+{{- range $i, $v := $value}}
+{{ if gt $i 0 }}
+<details>
+    <summary>Older versions</summary>
+{{ end }}
+<div id="{{printf "%s-%s" $key $v.Version}}">
+    <h3>Version{{printf "%s" $v.Version}}</h3>
+    <p>{{printf "Generated %s" $v.Created}}</p>
+    <p>App Version <b>{{printf "%s" $v.AppVersion}}</b></p>
+{{- range $v.Urls}}
     <a href="{{printf "%s" .}}">{{printf "%s" .}}</a>
 {{- end}}
-</div>
+</div>{{- if gt $i 0 }}
+</details>
+{{- end }}
 {{- end}}
 {{- end}}
 </body></html>
