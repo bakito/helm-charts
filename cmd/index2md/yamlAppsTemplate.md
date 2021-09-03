@@ -2,10 +2,7 @@
 {{ range $key, $value := .Entries }}
 {{ printf "## %s" $key }}
 {{- range $i, $v :=  $value}}
-{{ if gt $i 0 }}
-<details>
-  <summary>Older versions</summary>
-{{ end }}
+{{ if eq $i 0 }}
 {{printf "#### Version **%s**\n" $v.Version}}
 {{printf "> Generated %s" $v.Created}}
 
@@ -14,8 +11,18 @@
 {{- range $v.Urls}}
 {{printf "[%s](%s)" . .}}
 {{- end}}
+{{- else }}
+<details>
+  <summary>Older versions</summary>
+{{printf "  <h4>Version <strong>%s</strong></h4>\n" $v.Version}}
+{{printf "  <blockquote><p>Generated %s</p></blockquote>" $v.Created}}
 
-{{- if gt $i 0 }}
+{{printf "  <p>App Version <strong>%s</strong></p>" $v.AppVersion}}
+
+{{- range $v.Urls}}
+{{printf "<a href=\"%s\">%s</a>" . .}}
+{{- end}}
+
 </details>
 {{- end }}
 {{ end}}
