@@ -29,6 +29,20 @@ entries:
     version: 1.8.1
   sealed-secrets-web:
   - apiVersion: v2
+    appVersion: 2.5.3
+    created: "2021-09-10T13:16:06.890062458+02:00"
+    description: A web interface for Sealed Secrets by Bitnami.
+    digest: 61c09b05cbcdaf8bd39c045c512b688e8bd4719915ac70e7dab1eecfb60d2a19
+    home: https://github.com/bakito/sealed-secrets-web
+    icon: https://raw.githubusercontent.com/bakito/sealed-secrets-web/master/assets/logo.png
+    maintainers:
+    - name: bakito
+      url: https://github.com/bakito
+    name: sealed-secrets-web
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-2.5.3/sealed-secrets-web-2.5.3.tgz
+    version: 2.5.3
+  - apiVersion: v2
     appVersion: 2.5.2
     created: "2021-09-10T07:35:41.709763934+02:00"
     description: A web interface for Sealed Secrets by Bitnami.
@@ -70,4 +84,4 @@ entries:
     urls:
     - https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-2.5.0/sealed-secrets-web-2.5.0.tgz
     version: 2.5.0
-generated: "2021-09-10T07:35:41.70977625+02:00"
+generated: "2021-09-10T13:16:06.890081702+02:00"
