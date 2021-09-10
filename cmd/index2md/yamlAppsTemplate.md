@@ -16,7 +16,7 @@
 <details>
   <summary>Older versions</summary>
 {{- end }}
-  <br/>
+  <br/><br/>
 {{printf "  <h4>Version <strong>%s</strong></h4>\n" $v.Version}}
 {{printf "  <blockquote><p>Generated %s</p></blockquote>" $v.Created}}
 
