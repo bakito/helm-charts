@@ -30,18 +30,20 @@ App Version **2.5.2**
 
 <details>
   <summary>Older versions</summary>
+  <br/>
   <h4>Version <strong>2.5.1</strong></h4>
 
   <blockquote><p>Generated 2021-09-03T21:17:24.787032551+02:00</p></blockquote>
 
   <p>App Version <strong>2.5.1</strong></p>
-<a href="https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-2.5.1/sealed-secrets-web-2.5.1.tgz">https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-2.5.1/sealed-secrets-web-2.5.1.tgz</a>
+  <a href="https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-2.5.1/sealed-secrets-web-2.5.1.tgz">https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-2.5.1/sealed-secrets-web-2.5.1.tgz</a>
 
 
+  <br/>
   <h4>Version <strong>2.5.0</strong></h4>
 
   <blockquote><p>Generated 2021-08-26T21:06:38.413497229+02:00</p></blockquote>
 
   <p>App Version <strong>2.5.0</strong></p>
-<a href="https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-2.5.0/sealed-secrets-web-2.5.0.tgz">https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-2.5.0/sealed-secrets-web-2.5.0.tgz</a>
+  <a href="https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-2.5.0/sealed-secrets-web-2.5.0.tgz">https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-2.5.0/sealed-secrets-web-2.5.0.tgz</a>
 </details>

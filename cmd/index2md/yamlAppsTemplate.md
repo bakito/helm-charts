@@ -16,13 +16,14 @@
 <details>
   <summary>Older versions</summary>
 {{- end }}
+  <br/>
 {{printf "  <h4>Version <strong>%s</strong></h4>\n" $v.Version}}
 {{printf "  <blockquote><p>Generated %s</p></blockquote>" $v.Created}}
 
 {{printf "  <p>App Version <strong>%s</strong></p>" $v.AppVersion}}
 
 {{- range $v.Urls}}
-{{printf "<a href=\"%s\">%s</a>" . .}}
+{{printf "  <a href=\"%s\">%s</a>" . .}}
 {{- end}}
 {{- if isLast $value $i }}
 </details>
