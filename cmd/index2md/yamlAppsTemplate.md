@@ -12,8 +12,10 @@
 {{printf "[%s](%s)" . .}}
 {{- end}}
 {{- else }}
+{{- if eq $i 1 }}
 <details>
   <summary>Older versions</summary>
+{{- end }}
 {{printf "  <h4>Version <strong>%s</strong></h4>\n" $v.Version}}
 {{printf "  <blockquote><p>Generated %s</p></blockquote>" $v.Created}}
 
@@ -22,8 +24,9 @@
 {{- range $v.Urls}}
 {{printf "<a href=\"%s\">%s</a>" . .}}
 {{- end}}
-
+{{- if isLast $value $i }}
 </details>
+{{- end }}
 {{- end }}
 {{ end}}
 {{- end}}

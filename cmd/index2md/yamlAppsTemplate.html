@@ -8,7 +8,7 @@
 {{- range $key, $value := .Entries }}
 <h2>{{ printf "%s" $key }}</h2>
 {{- range $i, $v := $value}}
-{{ if gt $i 0 }}
+{{ if eq $i 1 }}
 <details>
     <summary>Older versions</summary>
 {{ end }}
@@ -19,7 +19,7 @@
 {{- range $v.Urls}}
     <a href="{{printf "%s" .}}">{{printf "%s" .}}</a>
 {{- end}}
-</div>{{- if gt $i 0 }}
+</div>{{- if isLast $value $i }}
 </details>
 {{- end }}
 {{- end}}

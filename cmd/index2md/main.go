@@ -51,19 +51,32 @@ func main() {
 	flag.Parse()
 	indexYaml, err := getIndexYaml(*file, *title)
 	if err != nil {
-		_, _ = fmt.Fprintf(os.Stderr, "Unable to load %s.yaml %s\n", *file, err)
+		_, _ = fmt.Fprintf(os.Stderr, "Unable to load %s.yaml %v\n", *file, err)
 		if err != nil {
 			return
 		}
 		os.Exit(1)
 	}
 
+	funcs := template.FuncMap{"isLast": func(list []Chart, i int) bool {
+		return len(list)-1 == i
+	}}
+
 	var tmplAppsList *template.Template
 	if !*htmlout {
-		tmplAppsList, _ = template.New("yamlAppsTemplateMarkdown").Parse(yamlAppsTemplateMarkdown)
+		tmplAppsList, err = template.New("yamlAppsTemplateMarkdown").Funcs(funcs).Parse(yamlAppsTemplateMarkdown)
+		if err != nil {
+			_, _ = fmt.Fprintf(os.Stderr, "Unable to parse template yamlAppsTemplateMarkdown: %v", err)
+			os.Exit(1)
+		}
 	} else {
-		tmplAppsList, _ = template.New("yamlAppsTemplateHtml").Parse(yamlAppsTemplateHTML)
+		tmplAppsList, err = template.New("yamlAppsTemplateHtml").Funcs(funcs).Parse(yamlAppsTemplateHTML)
+		if err != nil {
+			_, _ = fmt.Fprintf(os.Stderr, "Unable to parse template yamlAppsTemplateHtml: %v", err)
+			os.Exit(1)
+		}
 	}
+
 	err = tmplAppsList.Execute(os.Stdout, indexYaml)
 
 	if err != nil {
