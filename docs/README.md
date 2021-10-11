@@ -22,7 +22,7 @@ App Version **1.8.1**
 
 #### Version **2.6.1**
 
-> Generated 2021-10-12T01:56:43.510852525+02:00
+> Generated 2021-10-12T01:56:57.234627959+02:00
 
 App Version **v2.6.1**
 [https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-2.6.1/sealed-secrets-web-2.6.1.tgz](https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-2.6.1/sealed-secrets-web-2.6.1.tgz)
