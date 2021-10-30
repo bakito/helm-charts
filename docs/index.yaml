@@ -27,16 +27,6 @@ entries:
     urls:
     - https://github.com/bakito/helm-charts/releases/download/java-truststore-injection-webhook-0.0.1/java-truststore-injection-webhook-0.0.1.tgz
     version: 0.0.1
-  - apiVersion: v2
-    appVersion: v0.0.0
-    created: "2021-10-29T17:57:30.696160081+02:00"
-    description: A Helm chart to install the java truststore injection webhook
-    digest: b50f0d64b451388ec75b2a4c89bed650252ef94b5633bd874136d3396c5f16fd
-    name: java-truststore-injection-webhook
-    type: application
-    urls:
-    - https://github.com/bakito/helm-charts/releases/download/java-truststore-injection-webhook-0.0.0/java-truststore-injection-webhook-0.0.0.tgz
-    version: 0.0.0
   k8s-event-logger-operator:
   - apiVersion: v2
     appVersion: 1.8.1
