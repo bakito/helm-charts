@@ -16,6 +16,17 @@ entries:
     urls:
     - https://github.com/bakito/helm-charts/releases/download/batch-job-controller-v1.1.1/batch-job-controller-v1.1.1.tgz
     version: v1.1.1
+  java-truststore-injection-webhook:
+  - apiVersion: v2
+    appVersion: v0.0.2
+    created: "2021-10-30T13:16:26.566426629Z"
+    description: A Helm chart to install the java truststore injection webhook
+    digest: 6e81815108435dde6ff4b5a25393c8e3e0bf006c04e69e38253983ab5e01864b
+    name: java-truststore-injection-webhook
+    type: application
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/java-truststore-injection-webhook-0.0.2/java-truststore-injection-webhook-0.0.2.tgz
+    version: 0.0.2
   k8s-event-logger-operator:
   - apiVersion: v2
     appVersion: 1.8.1
@@ -126,4 +137,4 @@ entries:
     urls:
     - https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-2.5.0/sealed-secrets-web-2.5.0.tgz
     version: 2.5.0
-generated: "2021-10-30T11:50:54.423120053Z"
+generated: "2021-10-30T13:16:26.566461631Z"
