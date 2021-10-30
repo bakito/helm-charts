@@ -30,13 +30,19 @@ jobs:
         run: |
           mkdir -p packages
           cd packages
-          wget https://github.com/bakito/helm-charts/releases/download/${{github.event.release.name }}/${{github.event.release.name }}.tgz
+          wget https://github.com/${{github.repository}}/releases/download/${{github.event.release.name}}/${{github.event.release.name}}.tgz
           ls -alh
 
       - name: Update Helm Index
-        run: cr index --config .chart-releaser.yaml
+        run: cr index
         env:
-          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          CR_OWNER: "${{github.repository_owner}}"
+          CR_TOKEN: "${{secrets.CR_TOKEN}}"
+          CR_GIT_REPO: "${{github.event.repository.name}}"
+          CR_CHARTS_REPO: "https://${{github.repository_owner}}.github.io/${{github.event.repository.name}}/"
+          CR_PACKAGE_PATH: packages
+          CR_PAGES_BRANCH: main
+          CR_INDEX_PATH: docs/index.yaml
 
       - name: Set up Go 1.x
         uses: actions/setup-go@v2
