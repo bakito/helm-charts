@@ -18,18 +18,6 @@ App Version **v1.1.1**
 App Version **v0.0.1**
 [https://github.com/bakito/helm-charts/releases/download/java-truststore-injection-webhook-0.0.1/java-truststore-injection-webhook-0.0.1.tgz](https://github.com/bakito/helm-charts/releases/download/java-truststore-injection-webhook-0.0.1/java-truststore-injection-webhook-0.0.1.tgz)
 
-
-<details>
-  <summary>Older versions</summary>
-  <br/><br/>
-  <h4>Version <strong>0.0.0</strong></h4>
-
-  <blockquote><p>Generated 2021-10-29T17:57:30.696160081+02:00</p></blockquote>
-
-  <p>App Version <strong>v0.0.0</strong></p>
-  <a href="https://github.com/bakito/helm-charts/releases/download/java-truststore-injection-webhook-0.0.0/java-truststore-injection-webhook-0.0.0.tgz">https://github.com/bakito/helm-charts/releases/download/java-truststore-injection-webhook-0.0.0/java-truststore-injection-webhook-0.0.0.tgz</a>
-</details>
-
 ## k8s-event-logger-operator
 
 #### Version **1.8.1**
