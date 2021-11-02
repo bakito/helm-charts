@@ -18,6 +18,16 @@ entries:
     version: v1.1.1
   java-truststore-injection-webhook:
   - apiVersion: v2
+    appVersion: v0.0.4
+    created: "2021-11-02T09:33:11.013027346Z"
+    description: A Helm chart to install the java truststore injection webhook
+    digest: 2a5c3036e8f79dd83f140367ff2560aa2474c93d94e36104d2692f2739a6983b
+    name: java-truststore-injection-webhook
+    type: application
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/java-truststore-injection-webhook-0.0.4/java-truststore-injection-webhook-0.0.4.tgz
+    version: 0.0.4
+  - apiVersion: v2
     appVersion: v0.0.2
     created: "2021-10-30T13:16:26.566426629Z"
     description: A Helm chart to install the java truststore injection webhook
@@ -137,4 +147,4 @@ entries:
     urls:
     - https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-2.5.0/sealed-secrets-web-2.5.0.tgz
     version: 2.5.0
-generated: "2021-10-30T13:16:26.566461631Z"
+generated: "2021-11-02T09:33:11.013262848Z"
