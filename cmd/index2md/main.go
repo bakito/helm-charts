@@ -9,6 +9,7 @@ import (
 	"io/ioutil"
 	"os"
 	"sort"
+	"strings"
 	"text/template"
 
 	"gopkg.in/yaml.v3"
@@ -101,7 +102,7 @@ func getIndexYaml(location string, title string) (IndexYaml, error) {
 	for key := range indexYaml.Entries {
 
 		sort.Slice(indexYaml.Entries[key], func(i, j int) bool {
-			return indexYaml.Entries[key][i].Version > indexYaml.Entries[key][j].Version
+			return strings.ReplaceAll(indexYaml.Entries[key][i].Version, "v", "") > strings.ReplaceAll(indexYaml.Entries[key][j].Version, "v", "")
 		})
 	}
 
