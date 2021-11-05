@@ -9,6 +9,18 @@
 App Version **v1.1.1**
 [https://github.com/bakito/helm-charts/releases/download/batch-job-controller-v1.1.1/batch-job-controller-v1.1.1.tgz](https://github.com/bakito/helm-charts/releases/download/batch-job-controller-v1.1.1/batch-job-controller-v1.1.1.tgz)
 
+
+<details>
+  <summary>Older versions</summary>
+  <br/><br/>
+  <h4>Version <strong>1.1.2</strong></h4>
+
+  <blockquote><p>Generated 2021-11-05T00:09:17.692082079Z</p></blockquote>
+
+  <p>App Version <strong>v1.1.2</strong></p>
+  <a href="https://github.com/bakito/helm-charts/releases/download/batch-job-controller-1.1.2/batch-job-controller-1.1.2.tgz">https://github.com/bakito/helm-charts/releases/download/batch-job-controller-1.1.2/batch-job-controller-1.1.2.tgz</a>
+</details>
+
 ## java-truststore-injection-webhook
 
 #### Version **0.0.5**
