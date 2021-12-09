@@ -2,6 +2,21 @@ apiVersion: v1
 entries:
   batch-job-controller:
   - apiVersion: v2
+    appVersion: v1.2.2
+    created: "2021-12-09T17:45:31.181095577Z"
+    description: Install batch job controller
+    digest: 5e7557e9961ccb932eca5d3808c18641caf53f39d7d60b4f9e06c28d9c703839
+    icon: https://emojigraph.org/media/google/man-construction-worker_1f477-200d-2642-fe0f.png
+    maintainers:
+    - email: github@bakito.ch
+      name: bakito
+    name: batch-job-controller
+    sources:
+    - https://github.com/bakito/batch-job-controller
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/batch-job-controller-1.2.2/batch-job-controller-1.2.2.tgz
+    version: 1.2.2
+  - apiVersion: v2
     appVersion: v1.2.1
     created: "2021-12-08T14:25:48.407917725Z"
     description: Install batch job controller
@@ -227,4 +242,4 @@ entries:
     urls:
     - https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-2.5.0/sealed-secrets-web-2.5.0.tgz
     version: 2.5.0
-generated: "2021-12-08T14:25:48.407958548Z"
+generated: "2021-12-09T17:45:31.181184576Z"
