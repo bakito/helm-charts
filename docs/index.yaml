@@ -169,6 +169,16 @@ entries:
     version: 0.0.2
   k8s-event-logger-operator:
   - apiVersion: v2
+    appVersion: v1.9.4
+    created: "2022-02-04T07:41:06.256241598Z"
+    description: Kubernetes event logger operator
+    digest: 0e2175790c92ad371e070e9f0d164664407259ded6d4ca554e3c3a5f4a5b30b2
+    name: k8s-event-logger-operator
+    type: application
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/k8s-event-logger-operator-1.9.4/k8s-event-logger-operator-1.9.4.tgz
+    version: 1.9.4
+  - apiVersion: v2
     appVersion: v1.9.3
     created: "2022-02-04T07:33:13.840257274Z"
     description: Kubernetes event logger operator
@@ -341,4 +351,4 @@ entries:
     urls:
     - https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-2.5.0/sealed-secrets-web-2.5.0.tgz
     version: 2.5.0
-generated: "2022-02-04T07:33:13.840344775Z"
+generated: "2022-02-04T07:41:06.2564552Z"
