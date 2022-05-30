@@ -8,6 +8,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"os"
+	"path"
 	"sort"
 	"strings"
 	"text/template"
@@ -60,9 +61,14 @@ func main() {
 		os.Exit(1)
 	}
 
-	funcs := template.FuncMap{"isLast": func(list []Chart, i int) bool {
-		return len(list)-1 == i
-	}}
+	funcs := template.FuncMap{
+		"isLast": func(list []Chart, i int) bool {
+			return len(list)-1 == i
+		},
+		"fileName": func(link string) string {
+			return path.Base(link)
+		},
+	}
 
 	var tmplAppsList *template.Template
 	if !*htmlout {

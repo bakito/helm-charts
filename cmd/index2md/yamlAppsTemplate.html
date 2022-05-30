@@ -17,7 +17,7 @@
     <p>{{printf "Generated %s" $v.Created}}</p>
     <p>App Version <b>{{printf "%s" $v.AppVersion}}</b></p>
 {{- range $v.Urls}}
-    <a href="{{printf "%s" .}}">{{printf "%s" .}}</a>
+    <a href="{{ . }}">{{ . | fileName }}</a>
 {{- end}}
 </div>{{- if isLast $value $i }}
 </details>

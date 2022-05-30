@@ -7,9 +7,8 @@
 {{printf "> Generated %s" $v.Created}}
 
 {{printf "App Version **%s**" $v.AppVersion}}
-
-{{- range $v.Urls}}
-{{printf "[%s](%s)" . .}}
+{{ range $v.Urls}}
+{{printf "[%s](%s)" (. | fileName) .}}
 {{- end}}
 {{- else }}
 {{- if eq $i 1 }}
@@ -23,7 +22,7 @@
 {{printf "  <p>App Version <strong>%s</strong></p>" $v.AppVersion}}
 
 {{- range $v.Urls}}
-{{printf "  <a href=\"%s\">%s</a>" . .}}
+{{printf "  <a href=\"%s\">%s</a>" . (. | fileName) }}
 {{- end}}
 {{- if isLast $value $i }}
 </details>
