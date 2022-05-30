@@ -178,6 +178,15 @@ App Version **v1.9.4**
 
   <p>App Version <strong>1.8.1</strong></p>
   <a href="https://github.com/bakito/helm-charts/releases/download/k8s-event-logger-operator-1.8.1/k8s-event-logger-operator-1.8.1.tgz">https://github.com/bakito/helm-charts/releases/download/k8s-event-logger-operator-1.8.1/k8s-event-logger-operator-1.8.1.tgz</a>
+
+
+  <br/><br/>
+  <h4>Version <strong>1.10.0</strong></h4>
+
+  <blockquote><p>Generated 2022-05-30T14:27:25.555184234Z</p></blockquote>
+
+  <p>App Version <strong>v1.10.0</strong></p>
+  <a href="https://github.com/bakito/helm-charts/releases/download/k8s-event-logger-operator-1.10.0/k8s-event-logger-operator-1.10.0.tgz">https://github.com/bakito/helm-charts/releases/download/k8s-event-logger-operator-1.10.0/k8s-event-logger-operator-1.10.0.tgz</a>
 </details>
 
 ## sealed-secrets-web
