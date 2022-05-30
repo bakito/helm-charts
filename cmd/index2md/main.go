@@ -6,6 +6,7 @@ import (
 	_ "embed"
 	"flag"
 	"fmt"
+	"github.com/coreos/go-semver/semver"
 	"io/ioutil"
 	"os"
 	"sort"
@@ -102,7 +103,15 @@ func getIndexYaml(location string, title string) (IndexYaml, error) {
 	for key := range indexYaml.Entries {
 
 		sort.Slice(indexYaml.Entries[key], func(i, j int) bool {
-			return strings.ReplaceAll(indexYaml.Entries[key][i].Version, "v", "") > strings.ReplaceAll(indexYaml.Entries[key][j].Version, "v", "")
+			v1, err1 := semver.NewVersion(strings.ReplaceAll(indexYaml.Entries[key][i].Version, "v", ""))
+			if err1 != nil {
+				return true
+			}
+			v2, err2 := semver.NewVersion(strings.ReplaceAll(indexYaml.Entries[key][j].Version, "v", ""))
+			if err2 != nil {
+				return false
+			}
+			return v2.LessThan(*v1)
 		})
 	}
 
