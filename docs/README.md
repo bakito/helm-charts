@@ -2,17 +2,26 @@
 
 ## batch-job-controller
 
-#### Version **1.4.0**
+#### Version **1.4.1**
 
-> Generated 2022-07-05T20:53:31.309596588Z
+> Generated 2022-07-06T07:00:45.618623641Z
 
-App Version **v1.4.0**
+App Version **v1.4.1**
 
-[batch-job-controller-1.4.0.tgz](https://github.com/bakito/helm-charts/releases/download/batch-job-controller-1.4.0/batch-job-controller-1.4.0.tgz)
+[batch-job-controller-1.4.1.tgz](https://github.com/bakito/helm-charts/releases/download/batch-job-controller-1.4.1/batch-job-controller-1.4.1.tgz)
 
 
 <details>
   <summary>Older versions</summary>
+  <br/><br/>
+  <h4>Version <strong>1.4.0</strong></h4>
+
+  <blockquote><p>Generated 2022-07-05T20:53:31.309596588Z</p></blockquote>
+
+  <p>App Version <strong>v1.4.0</strong></p>
+  <a href="https://github.com/bakito/helm-charts/releases/download/batch-job-controller-1.4.0/batch-job-controller-1.4.0.tgz">batch-job-controller-1.4.0.tgz</a>
+
+
   <br/><br/>
   <h4>Version <strong>1.3.0</strong></h4>
 
