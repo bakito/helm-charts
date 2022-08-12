@@ -6,7 +6,6 @@ import (
 	_ "embed"
 	"flag"
 	"fmt"
-	"io/ioutil"
 	"os"
 	"path"
 	"sort"
@@ -95,7 +94,7 @@ func main() {
 
 func getIndexYaml(location string, title string) (IndexYaml, error) {
 	indexYaml := &IndexYaml{}
-	b, err := ioutil.ReadFile(location)
+	b, err := os.ReadFile(location)
 	if err != nil {
 		return IndexYaml{}, err
 	}
