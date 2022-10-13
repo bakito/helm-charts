@@ -45,7 +45,7 @@ jobs:
           CR_INDEX_PATH: docs/index.yaml
 
       - name: Set up Go 1.x
-        uses: actions/setup-go@v2
+        uses: actions/setup-go@v3
         with:
           go-version: ^1.18
 
