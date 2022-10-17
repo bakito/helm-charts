@@ -483,4 +483,15 @@ entries:
     urls:
     - https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-2.5.0/sealed-secrets-web-2.5.0.tgz
     version: 2.5.0
-generated: "2022-10-01T19:18:42.966490429Z"
+  vault-unsealer:
+  - apiVersion: v2
+    appVersion: v0.0.1
+    created: "2022-10-17T11:12:18.071599136Z"
+    description: Vault Unsealer
+    digest: 511369ab1fa22272cb4a850ab297b991d18a27291486e900ab2fce44f9b3da82
+    name: vault-unsealer
+    type: application
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/vault-unsealer-0.0.1/vault-unsealer-0.0.1.tgz
+    version: 0.0.1
+generated: "2022-10-17T11:12:18.071702336Z"

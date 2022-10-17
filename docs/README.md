@@ -349,3 +349,13 @@ App Version **v2.8.1**
   <a href="https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-2.5.0/sealed-secrets-web-2.5.0.tgz">sealed-secrets-web-2.5.0.tgz</a>
 </details>
 
+## vault-unsealer
+
+#### Version **0.0.1**
+
+> Generated 2022-10-17T11:12:18.071599136Z
+
+App Version **v0.0.1**
+
+[vault-unsealer-0.0.1.tgz](https://github.com/bakito/helm-charts/releases/download/vault-unsealer-0.0.1/vault-unsealer-0.0.1.tgz)
+
