@@ -239,6 +239,17 @@ entries:
     version: 0.0.2
   k8s-event-logger-operator:
   - apiVersion: v2
+    appVersion: v1.10.2
+    created: "2022-10-18T16:30:37.589528283Z"
+    description: This operator creates a logging pod that logs corev1.Event information
+      as structured json log. The crd allows to configure the events to be logged.
+    digest: 0492a51c2d2def1ec73f99edac43416cfa12a683a4a1d1ba2a1f58b2d5a7f716
+    name: k8s-event-logger-operator
+    type: application
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/k8s-event-logger-operator-1.10.2/k8s-event-logger-operator-1.10.2.tgz
+    version: 1.10.2
+  - apiVersion: v2
     appVersion: v1.10.1
     created: "2022-05-30T14:29:49.732531154Z"
     description: Kubernetes event logger operator
@@ -538,4 +549,4 @@ entries:
     urls:
     - https://github.com/bakito/helm-charts/releases/download/vault-unsealer-0.0.1/vault-unsealer-0.0.1.tgz
     version: 0.0.1
-generated: "2022-10-18T14:10:35.42992162Z"
+generated: "2022-10-18T16:30:37.589707885Z"
