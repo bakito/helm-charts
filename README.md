@@ -1,3 +1,4 @@
+[![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/bakito)](https://artifacthub.io/packages/search?repo=bakito)
 # [helm-charts](https://bakito.github.io/helm-charts/)
 
 ## Setup
