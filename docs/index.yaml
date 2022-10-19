@@ -539,7 +539,7 @@ entries:
     created: "2022-10-19T22:16:48.657093641Z"
     description: A kubernetes controller that can auto unseal vault pods.
     digest: c653922b53daa50dc221d369e5965caa62059c447275995e5f732ec9076957a8
-    icon: https://raw.githubusercontent.com/bakito/vault-unsealer/main/chart/logo.png
+    icon: https://emojigraph.org/media/google/seal_1f9ad.png
     name: vault-unsealer
     type: application
     urls:
@@ -550,7 +550,7 @@ entries:
     created: "2022-10-18T13:42:01.875797584Z"
     description: A kubernetes controller that can auto unseal vault pods.
     digest: 2f3e1f0f67cc9f8931c327671e165af3d594e348cae9cafa271f4f6b9dff4a0b
-    icon: https://raw.githubusercontent.com/bakito/vault-unsealer/main/chart/logo.png
+    icon: https://emojigraph.org/media/google/seal_1f9ad.png
     name: vault-unsealer
     type: application
     urls:
@@ -561,7 +561,7 @@ entries:
     created: "2022-10-18T13:10:17.722220911Z"
     description: A kubernetes controller that can auto unseal vault pods.
     digest: 8d0a711496c96bb55b4309b9ae58cbcb7183af8b2f115cd0f1a96795eb03c884
-    icon: https://raw.githubusercontent.com/bakito/vault-unsealer/main/chart/logo.png
+    icon: https://emojigraph.org/media/google/seal_1f9ad.png
     name: vault-unsealer
     type: application
     urls:
@@ -572,7 +572,7 @@ entries:
     created: "2022-10-17T11:12:18.071599136Z"
     description: Vault Unsealer
     digest: 511369ab1fa22272cb4a850ab297b991d18a27291486e900ab2fce44f9b3da82
-    icon: https://raw.githubusercontent.com/bakito/vault-unsealer/main/chart/logo.png
+    icon: https://emojigraph.org/media/google/seal_1f9ad.png
     name: vault-unsealer
     type: application
     urls:
