@@ -535,6 +535,16 @@ entries:
     version: 2.5.0
   vault-unsealer:
   - apiVersion: v2
+    appVersion: v0.0.5
+    created: "2022-10-19T20:21:36.847249506Z"
+    description: A kubernetes controller that can auto unseal vault pods.
+    digest: a80cd84d42743f51b7a5f107efd01ef1e3f68a0ba582ce53749d7bd7b092e247
+    name: vault-unsealer
+    type: application
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/vault-unsealer-0.0.5/vault-unsealer-0.0.5.tgz
+    version: 0.0.5
+  - apiVersion: v2
     appVersion: v0.0.4
     created: "2022-10-18T14:10:35.429645817Z"
     description: A kubernetes controller that can auto unseal vault pods.
@@ -574,4 +584,4 @@ entries:
     urls:
     - https://github.com/bakito/helm-charts/releases/download/vault-unsealer-0.0.1/vault-unsealer-0.0.1.tgz
     version: 0.0.1
-generated: "2022-10-18T17:18:51.707211109Z"
+generated: "2022-10-19T20:21:36.847487508Z"
