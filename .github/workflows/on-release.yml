@@ -30,7 +30,7 @@ jobs:
         run: |
           mkdir -p packages
           cd packages
-          wget https://github.com/${{github.repository}}/releases/download/${{github.event.release.name}}/${{github.event.release.name}}.tgz
+          wget -q https://github.com/${{github.repository}}/releases/download/${{github.event.release.name}}/${{github.event.release.name}}.tgz
           ls -alh
 
       - name: Update Helm Index
