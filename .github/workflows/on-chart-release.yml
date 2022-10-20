@@ -1,0 +1,59 @@
+name: Add new Chart
+
+on:
+  release:
+    types:
+      - published
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: main
+
+      - name: Configure Git
+        run: |
+          git config user.name "$GITHUB_ACTOR"
+          git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
+
+      - name: Install chart-releaser
+        uses: engineerd/configurator@v0.0.8
+        with:
+          name: cr
+          url: https://github.com/helm/chart-releaser/releases/download/v1.2.1/chart-releaser_1.2.1_linux_amd64.tar.gz
+          pathInArchive: cr
+
+      - name: Download new Chart
+        run: |
+          mkdir -p packages
+          cd packages
+          wget -q https://github.com/${{github.repository}}/releases/download/${{github.event.release.name}}/${{github.event.release.name}}.tgz
+          ls -alh
+
+      - name: Update Helm Index
+        run: cr index
+        env:
+          CR_OWNER: "${{github.repository_owner}}"
+          CR_TOKEN: "${{secrets.CR_TOKEN}}"
+          CR_GIT_REPO: "${{github.event.repository.name}}"
+          CR_CHARTS_REPO: "https://${{github.repository_owner}}.github.io/${{github.event.repository.name}}/"
+          CR_PACKAGE_PATH: packages
+          CR_PAGES_BRANCH: main
+          CR_INDEX_PATH: docs/index.yaml
+
+      - name: Set up Go
+        uses: actions/setup-go@v3
+        with:
+          go-version-file: "go.mod"
+
+      - name: Generate Readme
+        run: go run ./cmd/index2md/ > docs/README.md
+
+      - name: Commit changes
+        run: |
+          git add .
+          git commit -m"add release ${{github.event.release.name }}"
+          git push
