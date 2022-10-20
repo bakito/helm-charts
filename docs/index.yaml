@@ -1,15 +1,581 @@
 apiVersion: v1
 entries:
+  batch-job-controller:
+  - apiVersion: v2
+    appVersion: v1.4.4
+    created: "2022-10-18T17:18:51.706614316Z"
+    description: Install batch job controller
+    digest: df3b5746823bccdf50f07b4eb4e2cbcc52b1940d5e3215513c61a4054a09c7d6
+    icon: https://emojigraph.org/media/google/man-construction-worker_1f477-200d-2642-fe0f.png
+    maintainers:
+    - email: github@bakito.ch
+      name: bakito
+    name: batch-job-controller
+    sources:
+    - https://github.com/bakito/batch-job-controller
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/batch-job-controller-1.4.4/batch-job-controller-1.4.4.tgz
+    version: 1.4.4
+  - apiVersion: v2
+    appVersion: v1.4.3
+    created: "2022-07-07T11:32:41.376363512Z"
+    description: Install batch job controller
+    digest: 71c7f224671fe1f032287c4846cf82b4e9f44811c126a506d9036f7b6c027b1f
+    icon: https://emojigraph.org/media/google/man-construction-worker_1f477-200d-2642-fe0f.png
+    maintainers:
+    - email: github@bakito.ch
+      name: bakito
+    name: batch-job-controller
+    sources:
+    - https://github.com/bakito/batch-job-controller
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/batch-job-controller-1.4.3/batch-job-controller-1.4.3.tgz
+    version: 1.4.3
+  - apiVersion: v2
+    appVersion: v1.4.2
+    created: "2022-07-06T21:02:54.495782593Z"
+    description: Install batch job controller
+    digest: b5158b52b8f5c077fcebc61e7b1dce48d0b1af8b52160cb4956bc1fd26f39c33
+    icon: https://emojigraph.org/media/google/man-construction-worker_1f477-200d-2642-fe0f.png
+    maintainers:
+    - email: github@bakito.ch
+      name: bakito
+    name: batch-job-controller
+    sources:
+    - https://github.com/bakito/batch-job-controller
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/batch-job-controller-1.4.2/batch-job-controller-1.4.2.tgz
+    version: 1.4.2
+  - apiVersion: v2
+    appVersion: v1.4.1
+    created: "2022-07-06T07:00:45.618623641Z"
+    description: Install batch job controller
+    digest: 7aaadaf0213a7e7bd3d6ff76e0033eaf7c445c2925de05b3b5120f7c3370492a
+    icon: https://emojigraph.org/media/google/man-construction-worker_1f477-200d-2642-fe0f.png
+    maintainers:
+    - email: github@bakito.ch
+      name: bakito
+    name: batch-job-controller
+    sources:
+    - https://github.com/bakito/batch-job-controller
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/batch-job-controller-1.4.1/batch-job-controller-1.4.1.tgz
+    version: 1.4.1
+  - apiVersion: v2
+    appVersion: v1.4.0
+    created: "2022-07-05T20:53:31.309596588Z"
+    description: Install batch job controller
+    digest: 5260c697dc20a86ad96dcde2364ee69bbfd9ae67a5a3a6742f4d03c14345ad18
+    icon: https://emojigraph.org/media/google/man-construction-worker_1f477-200d-2642-fe0f.png
+    maintainers:
+    - email: github@bakito.ch
+      name: bakito
+    name: batch-job-controller
+    sources:
+    - https://github.com/bakito/batch-job-controller
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/batch-job-controller-1.4.0/batch-job-controller-1.4.0.tgz
+    version: 1.4.0
+  - apiVersion: v2
+    appVersion: v1.3.0
+    created: "2021-12-27T21:22:39.090378347Z"
+    description: Install batch job controller
+    digest: 89076a4ac026a23046783a37432884239547f2f77a01ba13b7d6ae4faf307799
+    icon: https://emojigraph.org/media/google/man-construction-worker_1f477-200d-2642-fe0f.png
+    maintainers:
+    - email: github@bakito.ch
+      name: bakito
+    name: batch-job-controller
+    sources:
+    - https://github.com/bakito/batch-job-controller
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/batch-job-controller-1.3.0/batch-job-controller-1.3.0.tgz
+    version: 1.3.0
+  - apiVersion: v2
+    appVersion: v1.2.4
+    created: "2021-12-24T10:35:37.144675166Z"
+    description: Install batch job controller
+    digest: e007a8e021c65ff80c105d92929e7162130742ed75ea9c5acc9dc806c2bfbdbf
+    icon: https://emojigraph.org/media/google/man-construction-worker_1f477-200d-2642-fe0f.png
+    maintainers:
+    - email: github@bakito.ch
+      name: bakito
+    name: batch-job-controller
+    sources:
+    - https://github.com/bakito/batch-job-controller
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/batch-job-controller-1.2.4/batch-job-controller-1.2.4.tgz
+    version: 1.2.4
+  - apiVersion: v2
+    appVersion: v1.2.3
+    created: "2021-12-23T15:54:45.008016147Z"
+    description: Install batch job controller
+    digest: 0971188510b2002a835f123ff5dfde9c59841d5dfb703be54d6fca8aa88d7108
+    icon: https://emojigraph.org/media/google/man-construction-worker_1f477-200d-2642-fe0f.png
+    maintainers:
+    - email: github@bakito.ch
+      name: bakito
+    name: batch-job-controller
+    sources:
+    - https://github.com/bakito/batch-job-controller
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/batch-job-controller-1.2.3/batch-job-controller-1.2.3.tgz
+    version: 1.2.3
+  - apiVersion: v2
+    appVersion: v1.2.2
+    created: "2021-12-09T17:45:31.181095577Z"
+    description: Install batch job controller
+    digest: 5e7557e9961ccb932eca5d3808c18641caf53f39d7d60b4f9e06c28d9c703839
+    icon: https://emojigraph.org/media/google/man-construction-worker_1f477-200d-2642-fe0f.png
+    maintainers:
+    - email: github@bakito.ch
+      name: bakito
+    name: batch-job-controller
+    sources:
+    - https://github.com/bakito/batch-job-controller
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/batch-job-controller-1.2.2/batch-job-controller-1.2.2.tgz
+    version: 1.2.2
+  - apiVersion: v2
+    appVersion: v1.2.1
+    created: "2021-12-08T14:25:48.407917725Z"
+    description: Install batch job controller
+    digest: e998e2c96e37e162db3039ab0a457750c117d1513768a11d44e1c98730c204d9
+    icon: https://emojigraph.org/media/google/man-construction-worker_1f477-200d-2642-fe0f.png
+    maintainers:
+    - email: github@bakito.ch
+      name: bakito
+    name: batch-job-controller
+    sources:
+    - https://github.com/bakito/batch-job-controller
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/batch-job-controller-1.2.1/batch-job-controller-1.2.1.tgz
+    version: 1.2.1
+  - apiVersion: v2
+    appVersion: v1.2.0
+    created: "2021-12-07T12:12:04.710022445Z"
+    description: Install batch job controller
+    digest: 39d2764bab4d70533f58235e4bd9f3119aaf00952a8ab4e039aac830f814edf0
+    icon: https://emojigraph.org/media/google/man-construction-worker_1f477-200d-2642-fe0f.png
+    maintainers:
+    - email: github@bakito.ch
+      name: bakito
+    name: batch-job-controller
+    sources:
+    - https://github.com/bakito/batch-job-controller
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/batch-job-controller-1.2.0/batch-job-controller-1.2.0.tgz
+    version: 1.2.0
+  - apiVersion: v2
+    appVersion: v1.1.3
+    created: "2021-12-06T22:26:45.912669097Z"
+    description: Install batch job controller
+    digest: 16c47c6f530ecdd8edcdd1bbeda3dce67e2f6963f6ca08cc0e0a1fa36a7168c9
+    icon: https://emojigraph.org/media/google/man-construction-worker_1f477-200d-2642-fe0f.png
+    maintainers:
+    - email: github@bakito.ch
+      name: bakito
+    name: batch-job-controller
+    sources:
+    - https://github.com/bakito/batch-job-controller
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/batch-job-controller-1.1.3/batch-job-controller-1.1.3.tgz
+    version: 1.1.3
+  - apiVersion: v2
+    appVersion: v1.1.2
+    created: "2021-11-05T00:09:17.692082079Z"
+    description: Install batch job controller
+    digest: 74e89980029a5be1132c2dc241d98417c246a31d401fa16fa537d2eb52b2e524
+    icon: https://emojigraph.org/media/google/man-construction-worker_1f477-200d-2642-fe0f.png
+    maintainers:
+    - email: github@bakito.ch
+      name: bakito
+    name: batch-job-controller
+    sources:
+    - https://github.com/bakito/batch-job-controller
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/batch-job-controller-1.1.2/batch-job-controller-1.1.2.tgz
+    version: 1.1.2
+  - apiVersion: v2
+    appVersion: v1.1.1
+    created: "2021-08-25T20:30:58.869775403+02:00"
+    description: Install batch job controller
+    digest: 3e8b1720e8dc20ef7de844ecbaed944d3233638e7c9aaad29ae2338cf9deec6a
+    icon: https://emojigraph.org/media/google/man-construction-worker_1f477-200d-2642-fe0f.png
+    maintainers:
+    - email: github@bakito.ch
+      name: bakito
+    name: batch-job-controller
+    sources:
+    - https://github.com/bakito/batch-job-controller
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/batch-job-controller-v1.1.1/batch-job-controller-v1.1.1.tgz
+    version: v1.1.1
+  java-truststore-injection-webhook:
+  - apiVersion: v2
+    appVersion: v0.0.7
+    created: "2022-10-18T16:45:07.837110584Z"
+    description: A Helm chart to install the java truststore injection webhook
+    digest: 9ac1ae388433675ed1ad81d5628979fc7bcd22dc693fd9f5df78daf37b8ddde1
+    name: java-truststore-injection-webhook
+    type: application
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/java-truststore-injection-webhook-0.0.7/java-truststore-injection-webhook-0.0.7.tgz
+    version: 0.0.7
+  - apiVersion: v2
+    appVersion: v0.0.6
+    created: "2022-09-22T16:27:34.249460025Z"
+    description: A Helm chart to install the java truststore injection webhook
+    digest: 900944c890f5e8345f7bcf8e56a168fe3b07ec9171f97a5fab892e4cdce74a83
+    name: java-truststore-injection-webhook
+    type: application
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/java-truststore-injection-webhook-0.0.6/java-truststore-injection-webhook-0.0.6.tgz
+    version: 0.0.6
+  - apiVersion: v2
+    appVersion: v0.0.5
+    created: "2021-11-03T20:35:32.141602152Z"
+    description: A Helm chart to install the java truststore injection webhook
+    digest: 2791adbb069eb5283cc37376dc4b6fed0e661764a5cff311d62df0170d7cad95
+    name: java-truststore-injection-webhook
+    type: application
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/java-truststore-injection-webhook-0.0.5/java-truststore-injection-webhook-0.0.5.tgz
+    version: 0.0.5
+  - apiVersion: v2
+    appVersion: v0.0.4
+    created: "2021-11-02T09:33:11.013027346Z"
+    description: A Helm chart to install the java truststore injection webhook
+    digest: 2a5c3036e8f79dd83f140367ff2560aa2474c93d94e36104d2692f2739a6983b
+    name: java-truststore-injection-webhook
+    type: application
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/java-truststore-injection-webhook-0.0.4/java-truststore-injection-webhook-0.0.4.tgz
+    version: 0.0.4
+  - apiVersion: v2
+    appVersion: v0.0.2
+    created: "2021-10-30T13:16:26.566426629Z"
+    description: A Helm chart to install the java truststore injection webhook
+    digest: 6e81815108435dde6ff4b5a25393c8e3e0bf006c04e69e38253983ab5e01864b
+    name: java-truststore-injection-webhook
+    type: application
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/java-truststore-injection-webhook-0.0.2/java-truststore-injection-webhook-0.0.2.tgz
+    version: 0.0.2
+  k8s-event-logger-operator:
+  - apiVersion: v2
+    appVersion: v1.10.2
+    created: "2022-10-18T16:30:37.589528283Z"
+    description: This operator creates a logging pod that logs corev1.Event information
+      as structured json log. The crd allows to configure the events to be logged.
+    digest: 0492a51c2d2def1ec73f99edac43416cfa12a683a4a1d1ba2a1f58b2d5a7f716
+    name: k8s-event-logger-operator
+    type: application
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/k8s-event-logger-operator-1.10.2/k8s-event-logger-operator-1.10.2.tgz
+    version: 1.10.2
+  - apiVersion: v2
+    appVersion: v1.10.1
+    created: "2022-05-30T14:29:49.732531154Z"
+    description: Kubernetes event logger operator
+    digest: 8587d404bcba9108ce2b16dfbcd80d26be83c1292b76d59b6174ba3028d91466
+    name: k8s-event-logger-operator
+    type: application
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/k8s-event-logger-operator-1.10.1/k8s-event-logger-operator-1.10.1.tgz
+    version: 1.10.1
+  - apiVersion: v2
+    appVersion: v1.10.0
+    created: "2022-05-30T14:27:25.555184234Z"
+    description: Kubernetes event logger operator
+    digest: d9bbcce9fc9c1dedc2ddfab4f36696e07b0761d4daba61be936fa0aada178827
+    name: k8s-event-logger-operator
+    type: application
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/k8s-event-logger-operator-1.10.0/k8s-event-logger-operator-1.10.0.tgz
+    version: 1.10.0
+  - apiVersion: v2
+    appVersion: v1.9.4
+    created: "2022-02-04T07:41:06.256241598Z"
+    description: Kubernetes event logger operator
+    digest: 0e2175790c92ad371e070e9f0d164664407259ded6d4ca554e3c3a5f4a5b30b2
+    name: k8s-event-logger-operator
+    type: application
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/k8s-event-logger-operator-1.9.4/k8s-event-logger-operator-1.9.4.tgz
+    version: 1.9.4
+  - apiVersion: v2
+    appVersion: v1.9.3
+    created: "2022-02-04T07:33:13.840257274Z"
+    description: Kubernetes event logger operator
+    digest: 1a450d6614df5ea8de91ea07bb5baf9477e43afa81aaceeaa4c73bb6e2a79bd4
+    name: k8s-event-logger-operator
+    type: application
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/k8s-event-logger-operator-1.9.3/k8s-event-logger-operator-1.9.3.tgz
+    version: 1.9.3
+  - apiVersion: v2
+    appVersion: v1.9.2
+    created: "2022-02-03T17:17:11.954294538Z"
+    description: Kubernetes event logger operator
+    digest: 3232cccb9898726198fe2496a36decfccbe0ca8e31dd9209e959abebde061dcb
+    name: k8s-event-logger-operator
+    type: application
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/k8s-event-logger-operator-1.9.2/k8s-event-logger-operator-1.9.2.tgz
+    version: 1.9.2
+  - apiVersion: v2
+    appVersion: v1.9.1
+    created: "2022-02-02T22:13:24.993847833Z"
+    description: Kubernetes event logger operator
+    digest: dcb03fe0510dbe429c1337e81e7e0afe53c55720eb253f1e8ad2e4cfc539deb8
+    name: k8s-event-logger-operator
+    type: application
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/k8s-event-logger-operator-1.9.1/k8s-event-logger-operator-1.9.1.tgz
+    version: 1.9.1
+  - apiVersion: v2
+    appVersion: v1.9.0
+    created: "2022-02-02T15:41:51.90439579Z"
+    description: Kubernetes event logger operator
+    digest: 53f2618b248e5629f095b58a10f03063cb950e39d18b8d158ef6b44da4cdb6ee
+    name: k8s-event-logger-operator
+    type: application
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/k8s-event-logger-operator-1.9.0/k8s-event-logger-operator-1.9.0.tgz
+    version: 1.9.0
+  - apiVersion: v2
+    appVersion: v1.8.2
+    created: "2021-11-05T00:02:25.182569646Z"
+    description: Kubernetes event logger operator
+    digest: 0572cbc578b3f82cba392fbb34b5113b1d463f81b6ae14822009347af9652ad2
+    name: k8s-event-logger-operator
+    type: application
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/k8s-event-logger-operator-1.8.2/k8s-event-logger-operator-1.8.2.tgz
+    version: 1.8.2
+  - apiVersion: v2
+    appVersion: 1.8.1
+    created: "2021-08-25T19:01:09.43622615+02:00"
+    description: Kubernetes event logger operator
+    digest: 5f4a82910179fa5ee96ce6596785b423c81a299a46cfbb798cb56846347c4347
+    name: k8s-event-logger-operator
+    type: application
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/k8s-event-logger-operator-1.8.1/k8s-event-logger-operator-1.8.1.tgz
+    version: 1.8.1
+  sealed-secrets-web:
+  - apiVersion: v2
+    appVersion: v2.8.2
+    created: "2022-10-18T13:39:23.474272967Z"
+    description: A web interface for Sealed Secrets by Bitnami.
+    digest: 1632c5ae0060975c65404bb531cae0045f014f385c68bb5db97e9beca7feb44b
+    home: https://github.com/bakito/sealed-secrets-web
+    icon: https://raw.githubusercontent.com/bakito/sealed-secrets-web/master/assets/logo.png
+    maintainers:
+    - name: bakito
+      url: https://github.com/bakito
+    name: sealed-secrets-web
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-2.8.2/sealed-secrets-web-2.8.2.tgz
+    version: 2.8.2
+  - apiVersion: v2
+    appVersion: v2.8.1
+    created: "2022-10-01T19:18:42.966283012Z"
+    description: A web interface for Sealed Secrets by Bitnami.
+    digest: 84bd6e80f39048c51cef582a3095476661f60c657de6c8c351257a6c759034bd
+    home: https://github.com/bakito/sealed-secrets-web
+    icon: https://raw.githubusercontent.com/bakito/sealed-secrets-web/master/assets/logo.png
+    maintainers:
+    - name: bakito
+      url: https://github.com/bakito
+    name: sealed-secrets-web
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-2.8.1/sealed-secrets-web-2.8.1.tgz
+    version: 2.8.1
+  - apiVersion: v2
+    appVersion: v2.8.0
+    created: "2022-03-25T20:26:30.434037662Z"
+    description: A web interface for Sealed Secrets by Bitnami.
+    digest: 135622e52e9a82746eb9c5480e33731faf542113213220418dc46b7d79dc3eab
+    home: https://github.com/bakito/sealed-secrets-web
+    icon: https://raw.githubusercontent.com/bakito/sealed-secrets-web/master/assets/logo.png
+    maintainers:
+    - name: bakito
+      url: https://github.com/bakito
+    name: sealed-secrets-web
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-2.8.0/sealed-secrets-web-2.8.0.tgz
+    version: 2.8.0
+  - apiVersion: v2
+    appVersion: v2.7.1
+    created: "2022-03-06T07:35:21.892930259Z"
+    description: A web interface for Sealed Secrets by Bitnami.
+    digest: 2cc9798d6c5a3810b4c6dd618effdcf2428726bc58a30db2453e09c97a4cd765
+    home: https://github.com/bakito/sealed-secrets-web
+    icon: https://raw.githubusercontent.com/bakito/sealed-secrets-web/master/assets/logo.png
+    maintainers:
+    - name: bakito
+      url: https://github.com/bakito
+    name: sealed-secrets-web
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-2.7.1/sealed-secrets-web-2.7.1.tgz
+    version: 2.7.1
+  - apiVersion: v2
+    appVersion: v2.7.0
+    created: "2022-01-24T19:43:53.307831499Z"
+    description: A web interface for Sealed Secrets by Bitnami.
+    digest: cd69e927c1a5877ae10c0ccaea7b4ec3a98d32d5ba4887370b596b3ba9a7ca64
+    home: https://github.com/bakito/sealed-secrets-web
+    icon: https://raw.githubusercontent.com/bakito/sealed-secrets-web/master/assets/logo.png
+    maintainers:
+    - name: bakito
+      url: https://github.com/bakito
+    name: sealed-secrets-web
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-2.7.0/sealed-secrets-web-2.7.0.tgz
+    version: 2.7.0
+  - apiVersion: v2
+    appVersion: v2.6.1
+    created: "2021-10-12T01:56:57.234627959+02:00"
+    description: A web interface for Sealed Secrets by Bitnami.
+    digest: 97d5e18594a6c95f8cc6e9871f78049f29e697a4c32d0e10ce5ea1ebd7b028f7
+    home: https://github.com/bakito/sealed-secrets-web
+    icon: https://raw.githubusercontent.com/bakito/sealed-secrets-web/master/assets/logo.png
+    maintainers:
+    - name: bakito
+      url: https://github.com/bakito
+    name: sealed-secrets-web
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-2.6.1/sealed-secrets-web-2.6.1.tgz
+    version: 2.6.1
+  - apiVersion: v2
+    appVersion: 2.6.0
+    created: "2021-09-15T21:33:30.235863008+02:00"
+    description: A web interface for Sealed Secrets by Bitnami.
+    digest: 86f076afbc4b23f1f3cbcb25696baf9dcf5867f7fe876e821de5ce0e5c2f6a75
+    home: https://github.com/bakito/sealed-secrets-web
+    icon: https://raw.githubusercontent.com/bakito/sealed-secrets-web/master/assets/logo.png
+    maintainers:
+    - name: bakito
+      url: https://github.com/bakito
+    name: sealed-secrets-web
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-2.6.0/sealed-secrets-web-2.6.0.tgz
+    version: 2.6.0
+  - apiVersion: v2
+    appVersion: 2.5.4
+    created: "2021-09-10T13:27:58.05926312+02:00"
+    description: A web interface for Sealed Secrets by Bitnami.
+    digest: dbfb7e0bd650f5c2e9f1efe65bc3cd73e21254b2010fc0b1110d0d1c3c63b127
+    home: https://github.com/bakito/sealed-secrets-web
+    icon: https://raw.githubusercontent.com/bakito/sealed-secrets-web/master/assets/logo.png
+    maintainers:
+    - name: bakito
+      url: https://github.com/bakito
+    name: sealed-secrets-web
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-2.5.4/sealed-secrets-web-2.5.4.tgz
+    version: 2.5.4
+  - apiVersion: v2
+    appVersion: 2.5.3
+    created: "2021-09-10T13:16:06.890062458+02:00"
+    description: A web interface for Sealed Secrets by Bitnami.
+    digest: 61c09b05cbcdaf8bd39c045c512b688e8bd4719915ac70e7dab1eecfb60d2a19
+    home: https://github.com/bakito/sealed-secrets-web
+    icon: https://raw.githubusercontent.com/bakito/sealed-secrets-web/master/assets/logo.png
+    maintainers:
+    - name: bakito
+      url: https://github.com/bakito
+    name: sealed-secrets-web
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-2.5.3/sealed-secrets-web-2.5.3.tgz
+    version: 2.5.3
+  - apiVersion: v2
+    appVersion: 2.5.2
+    created: "2021-09-10T07:35:41.709763934+02:00"
+    description: A web interface for Sealed Secrets by Bitnami.
+    digest: 2a08ac981fd68906cbc4496af3acbaae8a1a9553f9999fd59f34974275d89076
+    home: https://github.com/bakito/sealed-secrets-web
+    icon: https://raw.githubusercontent.com/bakito/sealed-secrets-web/master/assets/logo.png
+    maintainers:
+    - name: bakito
+      url: https://github.com/bakito
+    name: sealed-secrets-web
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-2.5.2/sealed-secrets-web-2.5.2.tgz
+    version: 2.5.2
+  - apiVersion: v2
+    appVersion: 2.5.1
+    created: "2021-09-03T21:17:24.787032551+02:00"
+    description: A web interface for Sealed Secrets by Bitnami.
+    digest: 96ff35db39d0c4b1020caef96c55ded20deaa3dbefd58979dfef31613af1d96b
+    home: https://github.com/bakito/sealed-secrets-web
+    icon: https://raw.githubusercontent.com/bakito/sealed-secrets-web/master/assets/logo.png
+    maintainers:
+    - name: bakito
+      url: https://github.com/bakito
+    name: sealed-secrets-web
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-2.5.1/sealed-secrets-web-2.5.1.tgz
+    version: 2.5.1
+  - apiVersion: v2
+    appVersion: 2.5.0
+    created: "2021-08-26T21:06:38.413497229+02:00"
+    description: A web interface for Sealed Secrets by Bitnami.
+    digest: 70fc7df4e6ebdc4b7dd648812fa114e0154ae96c8ba98896b1590da680639d32
+    home: https://github.com/bakito/sealed-secrets-web
+    icon: https://raw.githubusercontent.com/bakito/sealed-secrets-web/master/assets/logo.png
+    maintainers:
+    - name: bakito
+      url: https://github.com/bakito
+    name: sealed-secrets-web
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-2.5.0/sealed-secrets-web-2.5.0.tgz
+    version: 2.5.0
   vault-unsealer:
   - apiVersion: v2
-    appVersion: v0.1.0
-    created: "2022-10-20T08:46:29.146893739Z"
+    appVersion: v0.0.7
+    created: "2022-10-19T22:16:48.657093641Z"
     description: A kubernetes controller that can auto unseal vault pods.
-    digest: 893c6a49db6720fc2cf546112c5c09404ddbb532c7bc216a16475b9b7b46def8
+    digest: c653922b53daa50dc221d369e5965caa62059c447275995e5f732ec9076957a8
     icon: https://emojigraph.org/media/google/seal_1f9ad.png
     name: vault-unsealer
     type: application
     urls:
-    - https://github.com/bakito/helm-charts/releases/download/vault-unsealer-0.1.0/vault-unsealer-0.1.0.tgz
-    version: 0.1.0
-generated: "2022-10-20T08:46:29.146897339Z"
+    - https://github.com/bakito/helm-charts/releases/download/vault-unsealer-0.0.7/vault-unsealer-0.0.7.tgz
+    version: 0.0.7
+  - apiVersion: v2
+    appVersion: v0.0.3
+    created: "2022-10-18T13:42:01.875797584Z"
+    description: A kubernetes controller that can auto unseal vault pods.
+    digest: 2f3e1f0f67cc9f8931c327671e165af3d594e348cae9cafa271f4f6b9dff4a0b
+    icon: https://emojigraph.org/media/google/seal_1f9ad.png
+    name: vault-unsealer
+    type: application
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/vault-unsealer-0.0.3/vault-unsealer-0.0.3.tgz
+    version: 0.0.3
+  - apiVersion: v2
+    appVersion: v0.0.2
+    created: "2022-10-18T13:10:17.722220911Z"
+    description: A kubernetes controller that can auto unseal vault pods.
+    digest: 8d0a711496c96bb55b4309b9ae58cbcb7183af8b2f115cd0f1a96795eb03c884
+    icon: https://emojigraph.org/media/google/seal_1f9ad.png
+    name: vault-unsealer
+    type: application
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/vault-unsealer-0.0.2/vault-unsealer-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
+    appVersion: v0.0.1
+    created: "2022-10-17T11:12:18.071599136Z"
+    description: Vault Unsealer
+    digest: 511369ab1fa22272cb4a850ab297b991d18a27291486e900ab2fce44f9b3da82
+    icon: https://emojigraph.org/media/google/seal_1f9ad.png
+    name: vault-unsealer
+    type: application
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/vault-unsealer-0.0.1/vault-unsealer-0.0.1.tgz
+    version: 0.0.1
+generated: "2022-10-19T22:16:48.657211441Z"
