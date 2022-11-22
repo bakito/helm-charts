@@ -263,6 +263,20 @@ entries:
     - https://github.com/bakito/helm-charts/releases/download/java-truststore-injection-webhook-0.0.2/java-truststore-injection-webhook-0.0.2.tgz
     version: 0.0.2
   k8s-event-logger-operator:
+  - annotations:
+      artifacthub.io/changes: |
+        - Add extra pod labels
+    apiVersion: v2
+    appVersion: v1.11.0
+    created: "2022-11-22T18:19:52.214988123Z"
+    description: This operator creates a logging pod that logs corev1.Event information
+      as structured json log. The crd allows to configure the events to be logged.
+    digest: 20f5a1f05139f3fab08f01da5fba2876adc1d515e403b8b51ad70330bc412502
+    name: k8s-event-logger-operator
+    type: application
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/k8s-event-logger-operator-1.11.0/k8s-event-logger-operator-1.11.0.tgz
+    version: 1.11.0
   - apiVersion: v2
     appVersion: v1.10.2
     created: "2022-10-18T16:30:37.589528283Z"
@@ -651,4 +665,4 @@ entries:
     urls:
     - https://github.com/bakito/helm-charts/releases/download/vault-unsealer-0.0.1/vault-unsealer-0.0.1.tgz
     version: 0.0.1
-generated: "2022-11-19T18:30:13.005440514Z"
+generated: "2022-11-22T18:19:52.215157413Z"
