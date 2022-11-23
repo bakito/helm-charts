@@ -381,6 +381,23 @@ entries:
   sealed-secrets-web:
   - annotations:
       artifacthub.io/changes: |
+        - simplified revisionHistoryLimit config in deployment
+    apiVersion: v2
+    appVersion: v3.0.4
+    created: "2022-11-23T19:37:55.567088336Z"
+    description: A web interface for Sealed Secrets by Bitnami.
+    digest: eaffa1263824487e91c37d1f46915b361ab7b3523cc10a433d35c78ea4484ee7
+    home: https://github.com/bakito/sealed-secrets-web
+    icon: https://raw.githubusercontent.com/bakito/sealed-secrets-web/master/assets/logo.png
+    maintainers:
+    - name: bakito
+      url: https://github.com/bakito
+    name: sealed-secrets-web
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-3.0.4/sealed-secrets-web-3.0.4.tgz
+    version: 3.0.4
+  - annotations:
+      artifacthub.io/changes: |
         - added attribute to define revisionHistoryLimit
     apiVersion: v2
     appVersion: v3.0.3
@@ -699,4 +716,4 @@ entries:
     urls:
     - https://github.com/bakito/helm-charts/releases/download/vault-unsealer-0.0.1/vault-unsealer-0.0.1.tgz
     version: 0.0.1
-generated: "2022-11-23T14:18:00.036380645Z"
+generated: "2022-11-23T19:37:55.567268935Z"
