@@ -265,6 +265,24 @@ entries:
   k8s-event-logger-operator:
   - annotations:
       artifacthub.io/changes: |
+        - Allow setting securityContext for controller and logger pods
+        - Logger Pod container is configured via a ConfigMap
+        - Allow overwriting image.tag
+    apiVersion: v2
+    appVersion: v1.12.0
+    created: "2022-12-24T08:31:22.787267833Z"
+    description: This operator creates a logging pod that logs corev1.Event information
+      as structured json log. The crd allows to configure the events to be logged.
+    digest: 11c63d2a45273a9b011c8d899350d6a1f44e581c01594c7cec165b13beb7d87b
+    name: k8s-event-logger-operator
+    sources:
+    - https://github.com/bakito/k8s-event-logger-operator
+    type: application
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/k8s-event-logger-operator-1.12.0/k8s-event-logger-operator-1.12.0.tgz
+    version: 1.12.0
+  - annotations:
+      artifacthub.io/changes: |
         - Add extra pod labels
     apiVersion: v2
     appVersion: v1.11.1
@@ -766,4 +784,4 @@ entries:
     urls:
     - https://github.com/bakito/helm-charts/releases/download/vault-unsealer-0.0.1/vault-unsealer-0.0.1.tgz
     version: 0.0.1
-generated: "2022-12-14T19:27:12.209590516Z"
+generated: "2022-12-24T08:31:22.787415333Z"
