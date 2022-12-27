@@ -37,7 +37,7 @@ jobs:
         run: cr index
         env:
           CR_OWNER: "${{github.repository_owner}}"
-          CR_TOKEN: "${{secrets.CR_TOKEN}}"
+          CR_TOKEN: "${{secrets.GITHUB_TOKEN}}"
           CR_GIT_REPO: "${{github.event.repository.name}}"
           CR_PACKAGE_PATH: packages
           CR_PAGES_BRANCH: main
