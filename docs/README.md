@@ -338,17 +338,26 @@ App Version **v1.13.4**
 
 ## sealed-secrets-web
 
-#### Version **3.0.5**
+#### Version **3.0.6**
 
-> Generated 2022-11-23T22:31:04.887170096Z
+> Generated 2023-03-27T19:04:09.221260855Z
 
-App Version **v3.0.5**
+App Version **v3.0.6**
 
-[sealed-secrets-web-3.0.5.tgz](https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-3.0.5/sealed-secrets-web-3.0.5.tgz)
+[sealed-secrets-web-3.0.6.tgz](https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-3.0.6/sealed-secrets-web-3.0.6.tgz)
 
 
 <details>
   <summary>Older versions</summary>
+  <br/><br/>
+  <h4>Version <strong>3.0.5</strong></h4>
+
+  <blockquote><p>Generated 2022-11-23T22:31:04.887170096Z</p></blockquote>
+
+  <p>App Version <strong>v3.0.5</strong></p>
+  <a href="https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-3.0.5/sealed-secrets-web-3.0.5.tgz">sealed-secrets-web-3.0.5.tgz</a>
+
+
   <br/><br/>
   <h4>Version <strong>3.0.4</strong></h4>
 
