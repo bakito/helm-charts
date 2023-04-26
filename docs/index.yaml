@@ -480,6 +480,24 @@ entries:
     - https://github.com/bakito/helm-charts/releases/download/k8s-event-logger-operator-1.8.1/k8s-event-logger-operator-1.8.1.tgz
     version: 1.8.1
   sealed-secrets-web:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Allow defining service annotations.
+    apiVersion: v2
+    appVersion: v3.0.7
+    created: "2023-04-26T05:31:49.280678212Z"
+    description: A web interface for Sealed Secrets by Bitnami.
+    digest: 1446120e5e86f7ade4546829c88b59c89dbe6b7d9af2b0a90a55a48961179e58
+    home: https://github.com/bakito/sealed-secrets-web
+    icon: https://raw.githubusercontent.com/bakito/sealed-secrets-web/master/assets/logo.png
+    maintainers:
+    - name: bakito
+      url: https://github.com/bakito
+    name: sealed-secrets-web
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-3.0.7/sealed-secrets-web-3.0.7.tgz
+    version: 3.0.7
   - apiVersion: v2
     appVersion: v3.0.6
     created: "2023-03-27T19:04:09.221260855Z"
@@ -867,4 +885,4 @@ entries:
     urls:
     - https://github.com/bakito/helm-charts/releases/download/vault-unsealer-0.0.1/vault-unsealer-0.0.1.tgz
     version: 0.0.1
-generated: "2023-03-27T19:04:09.221467562Z"
+generated: "2023-04-26T05:31:49.281030113Z"
