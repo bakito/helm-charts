@@ -483,6 +483,26 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: added
+          description: Add ServiceAccount automountServiceAccountToken
+        - kind: added
+          description: Add Secret Validation
+    apiVersion: v2
+    appVersion: v3.1.0
+    created: "2023-05-13T12:10:17.431673334Z"
+    description: A web interface for Sealed Secrets by Bitnami.
+    digest: b21f17c5951b0330963c61e15dc28a311bc8e905e71ac6af630cf32d80bcd283
+    home: https://github.com/bakito/sealed-secrets-web
+    icon: https://raw.githubusercontent.com/bakito/sealed-secrets-web/master/assets/logo.png
+    maintainers:
+    - name: bakito
+      url: https://github.com/bakito
+    name: sealed-secrets-web
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-3.1.0/sealed-secrets-web-3.1.0.tgz
+    version: 3.1.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
           description: Allow defining service annotations.
     apiVersion: v2
     appVersion: v3.0.7
@@ -885,4 +905,4 @@ entries:
     urls:
     - https://github.com/bakito/helm-charts/releases/download/vault-unsealer-0.0.1/vault-unsealer-0.0.1.tgz
     version: 0.0.1
-generated: "2023-04-26T05:31:49.281030113Z"
+generated: "2023-05-13T12:10:17.431906543Z"
