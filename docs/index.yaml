@@ -275,6 +275,23 @@ entries:
   k8s-event-logger-operator:
   - annotations:
       artifacthub.io/changes: |
+        - Allow additional pid annotations
+    apiVersion: v2
+    appVersion: v1.13.5
+    created: "2023-06-23T15:25:08.177067338Z"
+    description: This operator creates a logging pod that logs corev1.Event information
+      as structured json log. The crd allows to configure the events to be logged.
+    digest: f65f568c2d94785e89311a80d68ed5c0dcf1cc5662492543f98093571ddd9703
+    icon: https://raw.githubusercontent.com/bakito/k8s-event-logger-operator/main/docs/chart-logo.png
+    name: k8s-event-logger-operator
+    sources:
+    - https://github.com/bakito/k8s-event-logger-operator
+    type: application
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/k8s-event-logger-operator-1.13.5/k8s-event-logger-operator-1.13.5.tgz
+    version: 1.13.5
+  - annotations:
+      artifacthub.io/changes: |
         - Change labels of generated resources from ["app", "created-by"] to ["app.kubernetes.io/component", "app.kubernetes.io/managed-by"]
         - Created rbac resources have owner references
     apiVersion: v2
@@ -929,4 +946,4 @@ entries:
     urls:
     - https://github.com/bakito/helm-charts/releases/download/vault-unsealer-0.0.1/vault-unsealer-0.0.1.tgz
     version: 0.0.1
-generated: "2023-05-31T14:34:24.322087625Z"
+generated: "2023-06-23T15:25:08.177290039Z"
