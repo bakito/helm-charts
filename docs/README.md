@@ -190,17 +190,26 @@ App Version **v0.0.8**
 
 ## k8s-event-logger-operator
 
-#### Version **1.13.6**
+#### Version **1.13.7-rc1**
 
-> Generated 2023-06-23T15:35:02.652388977Z
+> Generated 2023-08-31T20:19:57.703048544Z
 
-App Version **v1.13.6**
+App Version **v1.13.7-rc1**
 
-[k8s-event-logger-operator-1.13.6.tgz](https://github.com/bakito/helm-charts/releases/download/k8s-event-logger-operator-1.13.6/k8s-event-logger-operator-1.13.6.tgz)
+[k8s-event-logger-operator-1.13.7-rc1.tgz](https://github.com/bakito/helm-charts/releases/download/k8s-event-logger-operator-1.13.7-rc1/k8s-event-logger-operator-1.13.7-rc1.tgz)
 
 
 <details>
   <summary>Older versions</summary>
+  <br/><br/>
+  <h4>Version <strong>1.13.6</strong></h4>
+
+  <blockquote><p>Generated 2023-06-23T15:35:02.652388977Z</p></blockquote>
+
+  <p>App Version <strong>v1.13.6</strong></p>
+  <a href="https://github.com/bakito/helm-charts/releases/download/k8s-event-logger-operator-1.13.6/k8s-event-logger-operator-1.13.6.tgz">k8s-event-logger-operator-1.13.6.tgz</a>
+
+
   <br/><br/>
   <h4>Version <strong>1.13.5</strong></h4>
 
