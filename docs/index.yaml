@@ -292,6 +292,23 @@ entries:
       artifacthub.io/changes: |
         - Allow additional pid annotations
     apiVersion: v2
+    appVersion: v1.13.9
+    created: "2024-05-10T07:58:02.754044864Z"
+    description: This operator creates a logging pod that logs corev1.Event information
+      as structured json log. The crd allows to configure the events to be logged.
+    digest: 5125d6857c1742581e664fda348020b6e311db215f99aaa10812d5a25b2e2ac2
+    icon: https://raw.githubusercontent.com/bakito/k8s-event-logger-operator/main/docs/chart-logo.png
+    name: k8s-event-logger-operator
+    sources:
+    - https://github.com/bakito/k8s-event-logger-operator
+    type: application
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/k8s-event-logger-operator-1.13.9/k8s-event-logger-operator-1.13.9.tgz
+    version: 1.13.9
+  - annotations:
+      artifacthub.io/changes: |
+        - Allow additional pid annotations
+    apiVersion: v2
     appVersion: v1.13.7
     created: "2024-01-16T16:50:14.29849797Z"
     description: This operator creates a logging pod that logs corev1.Event information
@@ -1158,4 +1175,4 @@ entries:
     urls:
     - https://github.com/bakito/helm-charts/releases/download/vault-unsealer-0.0.1/vault-unsealer-0.0.1.tgz
     version: 0.0.1
-generated: "2024-05-05T12:56:32.356513541Z"
+generated: "2024-05-10T07:58:02.754308495Z"
