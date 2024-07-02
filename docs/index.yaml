@@ -641,6 +641,22 @@ entries:
     version: 1.8.1
   sealed-secrets-web:
   - apiVersion: v2
+    appVersion: v3.1.4
+    created: "2024-07-02T17:22:24.094362504Z"
+    description: A web interface for Sealed Secrets by Bitnami.
+    digest: 5d0de4393ac688bdb72bd4923fb38cd6a8285b0a646ff6ce1c9d5cf831098a32
+    home: https://github.com/bakito/sealed-secrets-web
+    icon: https://raw.githubusercontent.com/bakito/sealed-secrets-web/master/assets/logo.png
+    maintainers:
+    - name: bakito
+      url: https://github.com/bakito
+    name: sealed-secrets-web
+    sources:
+    - https://github.com/bakito/sealed-secrets-web
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-3.1.4/sealed-secrets-web-3.1.4.tgz
+    version: 3.1.4
+  - apiVersion: v2
     appVersion: v3.1.3
     created: "2023-10-10T17:42:28.976798329Z"
     description: A web interface for Sealed Secrets by Bitnami.
@@ -1225,4 +1241,4 @@ entries:
     urls:
     - https://github.com/bakito/helm-charts/releases/download/vault-unsealer-0.0.1/vault-unsealer-0.0.1.tgz
     version: 0.0.1
-generated: "2024-06-03T21:57:22.577550549Z"
+generated: "2024-07-02T17:22:24.094683013Z"
