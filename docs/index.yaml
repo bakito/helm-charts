@@ -1047,6 +1047,29 @@ entries:
     - https://github.com/bakito/helm-charts/releases/download/sealed-secrets-web-2.5.0/sealed-secrets-web-2.5.0.tgz
     version: 2.5.0
   vault-unsealer:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Support for additional volumes and volumeMounts
+      artifacthub.io/signKey: |
+        fingerprint: 2B8F22F57260EFA67BE1C5824B11F800CD9D2252
+        url: https://argoproj.github.io/argo-helm/pgp_keys.asc
+    apiVersion: v2
+    appVersion: v0.3.0
+    created: "2024-07-10T09:59:01.11149466Z"
+    description: A kubernetes controller that can auto unseal vault pods.
+    digest: caa88527493d141ff512720931b0dbee48b4e76361d7215a66521795087f1d7a
+    icon: https://emojigraph.org/media/google/unlocked_1f513.png
+    maintainers:
+    - name: bakito
+      url: https://github.com/bakito
+    name: vault-unsealer
+    sources:
+    - https://github.com/bakito/vault-unsealer
+    type: application
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/vault-unsealer-0.3.0/vault-unsealer-0.3.0.tgz
+    version: 0.3.0
   - apiVersion: v2
     appVersion: v0.2.3
     created: "2024-07-03T05:11:05.979109031Z"
@@ -1269,4 +1292,4 @@ entries:
     urls:
     - https://github.com/bakito/helm-charts/releases/download/vault-unsealer-0.0.1/vault-unsealer-0.0.1.tgz
     version: 0.0.1
-generated: "2024-07-06T09:04:38.990336181Z"
+generated: "2024-07-10T09:59:01.111801686Z"
