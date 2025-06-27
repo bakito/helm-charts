@@ -159,17 +159,26 @@ App Version **v1.4.7**
 
 ## java-truststore-injection-webhook
 
-#### Version **0.0.9**
+#### Version **0.0.10**
 
-> Generated 2024-07-06T09:04:38.990092393Z
+> Generated 2025-06-27T14:59:16.702918165Z
 
-App Version **v0.0.9**
+App Version **v0.0.10**
 
-[java-truststore-injection-webhook-0.0.9.tgz](https://github.com/bakito/helm-charts/releases/download/java-truststore-injection-webhook-0.0.9/java-truststore-injection-webhook-0.0.9.tgz)
+[java-truststore-injection-webhook-0.0.10.tgz](https://github.com/bakito/helm-charts/releases/download/java-truststore-injection-webhook-0.0.10/java-truststore-injection-webhook-0.0.10.tgz)
 
 
 <details>
   <summary>Older versions</summary>
+  <br/><br/>
+  <h4>Version <strong>0.0.9</strong></h4>
+
+  <blockquote><p>Generated 2024-07-06T09:04:38.990092393Z</p></blockquote>
+
+  <p>App Version <strong>v0.0.9</strong></p>
+  <a href="https://github.com/bakito/helm-charts/releases/download/java-truststore-injection-webhook-0.0.9/java-truststore-injection-webhook-0.0.9.tgz">java-truststore-injection-webhook-0.0.9.tgz</a>
+
+
   <br/><br/>
   <h4>Version <strong>0.0.8</strong></h4>
 
