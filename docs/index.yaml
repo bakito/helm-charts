@@ -347,6 +347,24 @@ entries:
         - add image pull secrets to the EventLogger CRD
         - CRD reformatted in post-processing
     apiVersion: v2
+    appVersion: v1.14.2
+    created: "2025-07-03T07:22:27.410205951Z"
+    description: This operator creates a logging pod that logs corev1.Event information
+      as structured json log. The crd allows to configure the events to be logged.
+    digest: ce54a49dd0b8739542750c04aa922cf2b1b5c7c1fc598b6601b5d11f9a859d64
+    icon: https://raw.githubusercontent.com/bakito/k8s-event-logger-operator/main/docs/chart-logo.png
+    name: k8s-event-logger-operator
+    sources:
+    - https://github.com/bakito/k8s-event-logger-operator
+    type: application
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/k8s-event-logger-operator-1.14.2/k8s-event-logger-operator-1.14.2.tgz
+    version: 1.14.2
+  - annotations:
+      artifacthub.io/changes: |
+        - add image pull secrets to the EventLogger CRD
+        - CRD reformatted in post-processing
+    apiVersion: v2
     appVersion: v1.14.1
     created: "2025-06-27T14:39:48.671707796Z"
     description: This operator creates a logging pod that logs corev1.Event information
@@ -1478,4 +1496,4 @@ entries:
     urls:
     - https://github.com/bakito/helm-charts/releases/download/vault-unsealer-0.0.1/vault-unsealer-0.0.1.tgz
     version: 0.0.1
-generated: "2025-06-27T14:59:16.703131952Z"
+generated: "2025-07-03T07:22:27.410583681Z"
