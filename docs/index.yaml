@@ -2,6 +2,21 @@ apiVersion: v1
 entries:
   batch-job-controller:
   - apiVersion: v2
+    appVersion: v1.4.8
+    created: "2026-02-25T07:27:22.886363205Z"
+    description: Install batch job controller
+    digest: b2a0c2b14aefc37d0f792613cf2b681669b7fdae49d7a5f6c8dd2e1dc304677a
+    icon: https://emojigraph.org/media/google/man-construction-worker_1f477-200d-2642-fe0f.png
+    maintainers:
+    - email: github@bakito.ch
+      name: bakito
+    name: batch-job-controller
+    sources:
+    - https://github.com/bakito/batch-job-controller
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/batch-job-controller-1.4.8/batch-job-controller-1.4.8.tgz
+    version: 1.4.8
+  - apiVersion: v2
     appVersion: v1.4.7
     created: "2025-06-27T14:57:25.691441864Z"
     description: Install batch job controller
@@ -1578,4 +1593,4 @@ entries:
     urls:
     - https://github.com/bakito/helm-charts/releases/download/vault-unsealer-0.0.1/vault-unsealer-0.0.1.tgz
     version: 0.0.1
-generated: "2026-01-16T18:04:14.025789452Z"
+generated: "2026-02-25T07:27:22.886674706Z"
