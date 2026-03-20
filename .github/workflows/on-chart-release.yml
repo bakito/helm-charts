@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           ref: main
 
@@ -20,7 +20,7 @@ jobs:
           git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
 
       - name: Install chart-releaser
-        uses: engineerd/configurator@v0.0.10
+        uses: engineerd/configurator@dc6b312d89ab097f73f3ebbf507a69dd7399c5d0 # v0.0.10
         with:
           name: cr
           url: https://github.com/helm/chart-releaser/releases/download/v1.6.1/chart-releaser_1.6.1_linux_amd64.tar.gz
@@ -45,7 +45,7 @@ jobs:
           CR_INDEX_PATH: docs/index.yaml
 
       - name: Set up Go
-        uses: actions/setup-go@v6
+        uses: actions/setup-go@4b73464bb391d4059bd26b0524d20df3927bd417 # v6.3.0
         with:
           go-version-file: "go.mod"
 
