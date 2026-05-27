@@ -288,6 +288,18 @@ entries:
     version: v1.1.1
   java-truststore-injection-webhook:
   - apiVersion: v2
+    appVersion: v0.0.11
+    created: "2026-05-27T18:20:09.136238762Z"
+    description: A Helm chart to install the java truststore injection webhook
+    digest: 3bb305f552575c07eb2316475bc3e81c97328745dc13e1a2a5d5cc319ecfdc04
+    name: java-truststore-injection-webhook
+    sources:
+    - https://github.com/bakito/batch-job-controller
+    type: application
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/java-truststore-injection-webhook-0.0.11/java-truststore-injection-webhook-0.0.11.tgz
+    version: 0.0.11
+  - apiVersion: v2
     appVersion: v0.0.10
     created: "2025-06-27T14:59:16.702918165Z"
     description: A Helm chart to install the java truststore injection webhook
@@ -1640,4 +1652,4 @@ entries:
     urls:
     - https://github.com/bakito/helm-charts/releases/download/vault-unsealer-0.0.1/vault-unsealer-0.0.1.tgz
     version: 0.0.1
-generated: "2026-05-04T06:11:32.713453037Z"
+generated: "2026-05-27T18:20:09.136478816Z"
