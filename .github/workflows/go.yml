@@ -3,11 +3,15 @@ name: Go
 on:
   push:
     branches: [ main ]
+    paths:
+      - 'cmd/**'
+      - 'go.mod'
   pull_request:
     branches: [ main ]
-
+    paths:
+      - 'cmd/**'
+      - 'go.mod'
 jobs:
-
   build:
     name: Build
     runs-on: ubuntu-latest
