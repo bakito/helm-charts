@@ -1,6 +1,6 @@
 module github.com/bakito/helm-charts
 
-go 1.20
+go 1.27
 
 require (
 	github.com/coreos/go-semver v0.3.1
