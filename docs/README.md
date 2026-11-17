@@ -846,17 +846,26 @@ App Version **v3.3.2**
 
 ## vault-unsealer
 
-#### Version **0.4.1**
+#### Version **0.5.0**
 
-> Generated 2026-01-16T17:43:32.93717877Z
+> Generated 2026-11-17T09:12:41.372102282Z
 
-App Version **v0.4.1**
+App Version **v0.5.0**
 
-[vault-unsealer-0.4.1.tgz](https://github.com/bakito/helm-charts/releases/download/vault-unsealer-0.4.1/vault-unsealer-0.4.1.tgz)
+[vault-unsealer-0.5.0.tgz](https://github.com/bakito/helm-charts/releases/download/vault-unsealer-0.5.0/vault-unsealer-0.5.0.tgz)
 
 
 <details>
   <summary>Older versions</summary>
+  <br/><br/>
+  <h4>Version <strong>0.4.1</strong></h4>
+
+  <blockquote><p>Generated 2026-01-16T17:43:32.93717877Z</p></blockquote>
+
+  <p>App Version <strong>v0.4.1</strong></p>
+  <a href="https://github.com/bakito/helm-charts/releases/download/vault-unsealer-0.4.1/vault-unsealer-0.4.1.tgz">vault-unsealer-0.4.1.tgz</a>
+
+
   <br/><br/>
   <h4>Version <strong>0.4.0</strong></h4>
 

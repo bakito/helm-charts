@@ -1348,6 +1348,24 @@ entries:
   - annotations:
       artifacthub.io/changes: ""
     apiVersion: v2
+    appVersion: v0.5.0
+    created: "2026-11-17T09:12:41.372102282Z"
+    description: A kubernetes controller that can auto unseal vault pods.
+    digest: 3287b0bb73eb0a41cd2cd63604b1adabde4c1f7eaf3dc9a8b3e137fded5054bf
+    icon: https://emojigraph.org/media/google/unlocked_1f513.png
+    maintainers:
+    - name: bakito
+      url: https://github.com/bakito
+    name: vault-unsealer
+    sources:
+    - https://github.com/bakito/vault-unsealer
+    type: application
+    urls:
+    - https://github.com/bakito/helm-charts/releases/download/vault-unsealer-0.5.0/vault-unsealer-0.5.0.tgz
+    version: 0.5.0
+  - annotations:
+      artifacthub.io/changes: ""
+    apiVersion: v2
     appVersion: v0.4.1
     created: "2026-01-16T17:43:32.93717877Z"
     description: A kubernetes controller that can auto unseal vault pods.
@@ -1685,4 +1703,4 @@ entries:
     urls:
     - https://github.com/bakito/helm-charts/releases/download/vault-unsealer-0.0.1/vault-unsealer-0.0.1.tgz
     version: 0.0.1
-generated: "2026-08-17T11:30:23.267850364Z"
+generated: "2026-11-17T09:12:41.372306201Z"
